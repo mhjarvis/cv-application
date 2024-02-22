@@ -15,7 +15,7 @@
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	margin: 10px;
+	margin: 5px 10px;
 	background-color: #d4d6db;
 }
 
@@ -29,8 +29,17 @@ input {
 	color: black;
 }
 
+input:focus {
+	
+}
+
 label {
 	width: 90%;
 	font-size: 1.2rem;
 	font-weight: 700;
+}
+
+.state-zip-container {
+	display: flex;
+	margin: 0 10px;
 }

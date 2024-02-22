@@ -1,36 +1,53 @@
+import InputSpan from "./InputSpan";
 import "./PersonalInformation.css";
 
 export default function PersonalInformation() {
   return (
     <div className="personal-info-container">
-      <span>
-        <label>Full Name</label>
-        <input className="name" placeholder="First / Last Name"></input>
-      </span>
-      <span>
-        <label>Email</label>
-        <input className="email" placeholder="Enter Email"></input>
-      </span>
-      <span>
-        <label>Phone Number</label>
-        <input className="phone" placeholder="Enter Phone Number"></input>
-      </span>
-      <span>
-        <label>Street</label>
-        <input className="street" placeholder="Street"></input>
-      </span>
-      <span>
-        <label>City</label>
-        <input className="city" placeholder="City"></input>
-      </span>
-      <span>
-        <label>State</label>
-        <input className="state" placeholder="State"></input>
-      </span>
-      <span>
-        <label>Zip</label>
-        <input className="zip" placeholder="Zip Code"></input>
-      </span>
+      <InputSpan
+        inputLabel="Full Name"
+        inputClass="name"
+        inputPlaceHolder="First / Last Name"
+        inputType="text"
+      />
+      <InputSpan
+        inputLabel="Email"
+        inputClass="email"
+        inputPlaceHolder="Email"
+        inputType="email"
+      />
+      <InputSpan
+        inputLabel="Phone Number"
+        inputClass="phone"
+        inputPlaceHolder="Enter Phone Number"
+        inputType="number"
+      />
+      <InputSpan
+        inputLabel="Street"
+        inputClass="street"
+        inputPlaceHolder="Street Address"
+        inputType="text"
+      />
+      <InputSpan
+        inputLabel="City"
+        inputClass="city"
+        inputPlaceHolder="City"
+        inputType="text"
+      />
+      <div className="state-zip-container">
+        <InputSpan
+          inputLabel="State"
+          inputClass="state"
+          inputPlaceHolder="State"
+          inputType="text"
+        />
+        <InputSpan
+          inputLabel="Zip Code"
+          inputClass="zip"
+          inputPlaceHolder="Zip"
+          inputType="number"
+        />
+      </ div>
     </div>
   );
 }
