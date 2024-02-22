@@ -1,5 +1,6 @@
-import './Resume.css'
+/* eslint-disable react/prop-types */
+import "./Resume.css";
 
-export default function Resume() {
-  return <div>Hello</div>;
+export default function Resume({pinfo}) {
+  return <div>{pinfo.name}</div>;
 }
