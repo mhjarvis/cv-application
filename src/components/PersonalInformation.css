@@ -1,0 +1,36 @@
+
+.personal-info-container {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	width: 90%;
+	background-color: #d4d6db;
+	color: black;
+	margin: 20px 0;
+	
+}
+
+.personal-info-container span {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin: 10px;
+	background-color: #d4d6db;
+}
+
+input {
+	width: 90%;
+	border-style: none;
+	height: 30px;
+	border-radius: 6px;
+	background-color: white;
+	text-indent: 5px;
+	color: black;
+}
+
+label {
+	width: 90%;
+	font-size: 1.2rem;
+	font-weight: 700;
+}
