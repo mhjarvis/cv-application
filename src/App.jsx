@@ -1,5 +1,6 @@
 import './App.css'
 import PersonalInformation from './components/PersonalInformation'
+import Resume from './components/Resume'
 
 function App() {
 
@@ -9,7 +10,7 @@ function App() {
         <PersonalInformation />
       </div>
       <div className='resume-section'>
-
+        <Resume />
       </div>
     </div>
   )
