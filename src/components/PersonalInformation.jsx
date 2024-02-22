@@ -4,6 +4,7 @@ import "./PersonalInformation.css";
 export default function PersonalInformation() {
   return (
     <div className="personal-info-container">
+			<h2 className="personal-info-header">Personal Information</h2>
       <InputSpan
         inputLabel="Full Name"
         inputClass="name"
@@ -34,7 +35,7 @@ export default function PersonalInformation() {
         inputPlaceHolder="City"
         inputType="text"
       />
-      <div className="state-zip-container">
+      <div id="state-zip-container">
         <InputSpan
           inputLabel="State"
           inputClass="state"
