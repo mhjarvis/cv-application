@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 
-export default function InputSpan({
+export default function InputElement({
   inputLabel,
   inputClass,
   inputPlaceHolder,
