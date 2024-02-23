@@ -57,3 +57,14 @@ table {
   background-color: rgb(226, 225, 225);
 }
 
+.resume-input-container {
+	width: 500px;
+	height: 100%;
+	background-color: white;
+}
+
+.resume-output-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
