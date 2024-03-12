@@ -155,6 +155,7 @@ input {
 .resume-input-container {
     min-width: 40rem;
     max-width: 100%;
+    height: fit-content;
     display: flex;
     justify-content: center;
 	
