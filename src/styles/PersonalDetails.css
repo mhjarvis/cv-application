@@ -39,6 +39,21 @@
 	font-weight: 300;
 }
 
+.contact-container {
+	display: flex;
+	justify-content: space-between;
+	width: 90%;
+}
+
+.email {
+	width: 95%;
+}
+
+.phone-number, .phone-number-label {
+	width: 90%;
+	margin-left: 1rem;
+}
+
 .github {
 	margin-bottom: 2rem;
 }

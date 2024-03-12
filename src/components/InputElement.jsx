@@ -4,6 +4,7 @@ import { useState } from "react";
 
 export default function InputElement({
   inputLabel,
+  labelClass,
   inputClass,
   inputPlaceHolder,
 }) {
@@ -15,7 +16,7 @@ export default function InputElement({
 
   return (
     <span>
-      <label>{inputLabel}</label>
+      <label className={labelClass}>{inputLabel}</label>
       <input
         className={inputClass}
         placeholder={userInput}
