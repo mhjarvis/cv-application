@@ -4,7 +4,6 @@ import Education from "./Education";
 import Skills from "./Skills";
 import ProfessionalExperience from "./ProfessionalExperience";
 import "../styles/ResumeInput.css";
-import { useState } from "react";
 
 export default function ResumeInput() {
 
