@@ -5,6 +5,8 @@ function App() {
     return (
         <div className="container">
             <SideBar />
+            <div className="input-container"></div>
+            <div className="output-container"></div>
         </div>
     );
 }
