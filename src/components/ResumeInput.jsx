@@ -1,7 +1,7 @@
 import Certificates from "./Certificates";
 import Education from "./Education";
 import PersonalDetails from "./PersonalDetails";
-import ProfessionalExperience from "./ProfessionalExperience";
+import ProfessionalExperience from "./Experience";
 import Skills from "./Skills";
 
 export default function ResumeInput() {

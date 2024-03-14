@@ -8,7 +8,6 @@
 }
 
 input {
-    background-color: white;
     color: black;
 }
 
@@ -20,11 +19,17 @@ input {
     color: black;
 }
 
+.container * {
+    background-color: white;
+}
+
 /*************************************
 ********** INPUT CONTAINER ***********
 **************************************/
 
 .input-container {
+    position: -webkit-sticky;
+    position: relative;
     max-width: 500px;
     width: 100%;
     margin: 3rem 0;
@@ -33,27 +38,17 @@ input {
     border-radius: 1.6rem;
 }
 
+.section-heading {
+    font-size: 2.3rem;
+    margin: 2rem 1rem;
+    background-color: white;
+    font-weight: 900;
+}
+
 /** PERSONAL DETAILS **/
 
 .personal-details {
     display: flex;
     flex-direction: column;
-}
-
-.personal-details > input {
-    width: 90%;
-    height: 3rem;
-    margin: 1rem;
-}
-
-.contact-container {
-    width: 90%;
-    display: flex;
-    justify-content: space-between;
-    margin: 1rem;
-}
-
-.contact-container > input {
-    height: 3rem;
-    width: 45%;
+    background-color: white;
 }

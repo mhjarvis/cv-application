@@ -1,7 +1,7 @@
 export default function Education() {
     return (
-        <div className="education-container">
-            <h2 className="education-title">Education</h2>
+        <div className="education-container section-container">
+            <h2 className="section-heading education-heading">Education</h2>
             <input
                 type="text"
                 className="degree-input"

@@ -3,10 +3,12 @@ import "../styles/SideBar.css";
 import noteImage from "../../public/images/note-edit-outline.svg";
 import pencilImage from "../../public/images/pencil-ruler-outline.svg";
 import downloadImage from "../../public/images/download-circle-outline.svg";
+import logo from "../../public/images/logo.png";
 
 export default function SideBar() {
     return (
         <div className="sidebar">
+            <img src={logo} className="logo" alt="logo" />
             <button className="sidebar-btn content-btn">
                 <img src={noteImage} className="icon" alt="paper-clip-art" />
                 <p className="content-btn-p">Content</p>

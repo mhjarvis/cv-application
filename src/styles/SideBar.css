@@ -1,12 +1,16 @@
 .sidebar {
     /*     grid-area: Sidebar; */
+    position: -webkit-sticky;
+    position: sticky;
+    top: 2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
     width: 13rem;
     margin: 3rem;
-    height: 40rem;
+    height: 50rem;
+    max-height: 100vh;
     border-radius: 1.6rem;
     background-color: white;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
@@ -26,6 +30,11 @@
 .sidebar-btn:hover {
     cursor: pointer;
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.logo {
+    width: 8rem;
+    border-radius: 5rem;
 }
 
 /* Clip art images in sidebar */

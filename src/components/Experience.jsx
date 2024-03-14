@@ -1,7 +1,7 @@
-export default function ProfessionalExperience() {
+export default function Experience() {
     return (
-        <div className="professional-experience-container">
-            <h2 className="professional-experience-heading">
+        <div className="experience-container section-container">
+            <h2 className="section-heading experience-heading">
                 Professional Experience
             </h2>
             <div className="added-experience-container"></div>

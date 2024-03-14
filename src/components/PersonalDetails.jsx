@@ -1,7 +1,9 @@
 export default function PersonalDetails() {
     return (
-        <div className="personal-details">
-            <h2 className="personal-details-heading">Personal Details</h2>
+        <div className="personal-details section-container">
+            <h2 className="personal-heading section-heading">
+                Personal Details
+            </h2>
 
             <input type="text" className="fullname" placeholder="Full Name" />
 
