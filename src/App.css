@@ -137,7 +137,7 @@ table {
 }
 
 input {
-    background-color: rgb(243, 244, 246);
+    background-color: white;
     color: black;
     border: none;
 }
@@ -145,35 +145,42 @@ input {
 .container {
     display: flex;
     width: 100vw;
-    background-color: rgb(240, 238, 235);
+    background-color: white;
+    color: black;
 }
 
 /*************************************
 ********** INPUT CONTAINER ***********
 **************************************/
 
-.resume-input-container {
-    min-width: 40rem;
-    max-width: 100%;
-    height: fit-content;
-    display: flex;
-    justify-content: center;
-	
-}
-
 /*************************************
 ********** OUTPUT CONTAINER **********
 **************************************/
 
-.resume-output-container {
+/*************************************
+************** SIDE BAR **************
+**************************************/
+
+.sidebar {
     display: flex;
-    justify-content: center;
-	margin: 1rem 0;
-    width: 100%;
+    flex-direction: column;
+    border: 1px solid black;
 }
 
-.resume-back {
-    width: 600px;
-    height: 800px;
-    background-color: white;
+.btn {
+    font-size: 10px;
+    height: 5rem;
+    width: 6rem;
+    border: none;
+    border-radius: 8px;
+    margin: 1rem;
+}
+
+.content-btn {
+}
+
+.customize-btn {
+}
+
+.download-btn {
 }
