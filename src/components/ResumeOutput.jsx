@@ -1,5 +1,5 @@
+import "../styles/ResumeOutput.css";
+
 export default function ResumeOutput() {
-    return <div>
-        <div className="resume-paper"></div>
-    </div>
+    return <div className="output-container"></div>;
 }

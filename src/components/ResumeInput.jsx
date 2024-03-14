@@ -6,7 +6,7 @@ import Skills from "./Skills";
 
 export default function ResumeInput() {
     return (
-        <div>
+        <div className="input-container" >
             <PersonalDetails />
             <Education />
             <Skills />
