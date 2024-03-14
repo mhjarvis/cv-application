@@ -20,7 +20,7 @@
     border-radius: 0.8rem;
     margin: 1rem;
     background-color: rgba(246, 243, 239, 0.158);
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;}
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 2px 10px;}
 
 /* Adds hover state for individual sidebar buttons to produce poping effect */
 .sidebar-btn:hover {
