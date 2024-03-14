@@ -26,17 +26,13 @@ input {
     color: black;
 }
 
-.input-container {
-    grid-area: Input;
-}
-
-.output-container {
-    grid-area: Output;
-}
-
 /*************************************
 ********** INPUT CONTAINER ***********
 **************************************/
+
+.input-container {
+    grid-area: Input;
+}
 
 /** PERSONAL DETAILS **/
 
@@ -67,47 +63,15 @@ input {
 ********** OUTPUT CONTAINER **********
 **************************************/
 
+.output-container {
+    
+}
+
+
 .resume-paper {
     width: 600px;
     height: 800px;
     margin: 1rem;
     background-color: white;
     box-shadow: 0 0 0.5rem black;
-}
-
-/*************************************
-************** SIDE BAR **************
-**************************************/
-
-.sidebar {
-    /*     grid-area: Sidebar; */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    width: 13rem;
-    margin: 3rem;
-    height: 400px;
-    border-radius: 16px;
-    background-color: white;
-}
-
-.sidebar-btn {
-    font-size: 1.4rem;
-    width: 10rem;
-    height: 9rem;
-    border: none;
-    border-radius: 8px;
-    margin: 1rem;
-    background-color: rgba(246, 243, 239, 0.727);
-    color: black;
-}
-
-.content-btn {
-}
-
-.customize-btn {
-}
-
-.download-btn {
 }
