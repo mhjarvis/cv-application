@@ -6,8 +6,10 @@ import SideBar from "./components/SideBar";
 function App() {
     return (
         <div className="container">
-            <SideBar />
-            <ResumeInput />
+            <div className="left-section">
+                <SideBar />
+                <ResumeInput />
+            </div>
             <ResumeOutput />
         </div>
     );

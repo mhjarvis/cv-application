@@ -23,6 +23,16 @@ input {
     background-color: white;
 }
 
+.left-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    max-width: 700px;
+    margin: 3rem;
+    padding: 2rem;
+}
+
 /*************************************
 ********** INPUT CONTAINER ***********
 **************************************/
@@ -32,7 +42,7 @@ input {
     position: relative;
     max-width: 500px;
     width: 100%;
-    margin: 3rem 0;
+    margin: 0 0 1rem 1rem;
     padding: 3rem 1rem;
     background-color: white;
     border-radius: 1.6rem;
@@ -40,7 +50,7 @@ input {
 
 .section-heading {
     font-size: 2.7rem;
-    margin: 2rem 1rem;
+    margin: 2rem 1rem 2rem 1rem;
     background-color: white;
     font-weight: 900;
 }
