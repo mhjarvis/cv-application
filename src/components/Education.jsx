@@ -1,24 +1,27 @@
+import Inputs from "./Inputs";
+
 export default function Education() {
     return (
         <div className="education-container section-container">
             <h2 className="section-heading education-heading">Education</h2>
-            <input
+            <Inputs
                 type="text"
                 className="degree-input"
-                placeholder="Enter Degree"
+                placeholder="Enter degree"
             />
-            <input
+
+            <Inputs
                 type="text"
                 className="school"
                 placeholder="Enter school / university"
             />
             <div className="education-location-container">
-                <input
+                <Inputs
                     type="text"
                     className="education-city"
                     placeholder="Enter City"
                 />
-                <input
+                <Inputs
                     type="text"
                     className="education-country"
                     placeholder="Enter Country"
@@ -27,24 +30,24 @@ export default function Education() {
 
             <div className="education-dates-container">
                 <div className="education-start-container">
-                    <input
+                    <Inputs
                         type="text"
                         className="education-start-month"
                         placeholder="Start Month"
                     />
-                    <input
+                    <Inputs
                         type="text"
                         className="education-start-year"
                         placeholder="Start Year"
                     />
                 </div>
                 <div className="education-end-container">
-                    <input
+                    <Inputs
                         type="text"
                         className="education-end-month"
                         placeholder="End Month"
                     />
-                    <input
+                    <Inputs
                         type="text"
                         className="education-end-year"
                         placeholder="End Year"
