@@ -1,3 +1,5 @@
+import Inputs from "./Inputs";
+
 export default function Experience() {
     return (
         <div className="experience-container section-container">
@@ -6,16 +8,24 @@ export default function Experience() {
             </h2>
             <div className="added-experience-container"></div>
 
-            <input type="text" placeholder="Employer" />
-            <input type="text" placeholder="Job title" />
+            <Inputs
+                type="text"
+                className="experience-employer-input"
+                placeholder="Employer"
+            />
+            <Inputs
+                type="text"
+                className="experience-job-title-input "
+                placeholder="Job title"
+            />
 
             <div className="experience-location-container">
-                <input
+                <Inputs
                     type="text"
                     className="experience-city"
                     placeholder="Enter City"
                 />
-                <input
+                <Inputs
                     type="text"
                     className="experience-country"
                     placeholder="Enter Country"
@@ -24,24 +34,24 @@ export default function Experience() {
 
             <div className="experience-dates-container">
                 <div className="experience-start-container">
-                    <input
+                    <Inputs
                         type="text"
                         className="experience-start-month"
                         placeholder="Start Month"
                     />
-                    <input
+                    <Inputs
                         type="text"
                         className="experience-start-year"
                         placeholder="Start Year"
                     />
                 </div>
                 <div className="experience-end-container">
-                    <input
+                    <Inputs
                         type="text"
                         className="experience-end-month"
                         placeholder="End Month"
                     />
-                    <input
+                    <Inputs
                         type="text"
                         className="experience-end-year"
                         placeholder="End Year"
