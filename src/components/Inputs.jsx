@@ -1,11 +1,11 @@
 /* eslint-disable react/prop-types */
 
-export default function Imports(props) {
+export default function Imports({type, className, placeholder}) {
     return (
         <input
-            type={props.type}
-            className={props.className}
-            placeholder={props.placeholder}
+            type={type}
+            className={className}
+            placeholder={placeholder}
         />
     );
 }

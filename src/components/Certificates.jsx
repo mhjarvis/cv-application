@@ -6,11 +6,17 @@ export default function Certificates() {
             <h2 className="section-heading certificates-heading">
                 Certificates
             </h2>
-            <div className="added-certificates-container">
-                
-            </div>
-            <Inputs type="text" className='certificate-name-input' placeholder="Enter certificate" />
-            <Inputs type="text" className='certificate-additional-information-input' placeholder="Additional Information" />
+            <div className="added-certificates-container"></div>
+            <Inputs
+                type="text"
+                className="certificate-name-input"
+                placeholder="Enter certificate"
+            />
+            <Inputs
+                type="text"
+                className="certificate-additional-information-input"
+                placeholder="Additional Information"
+            />
             <button>Add Certificate</button>
         </div>
     );
