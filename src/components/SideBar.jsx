@@ -1,9 +1,9 @@
 import "../styles/SideBar.css";
 // import clip art images directly
-import noteImage from "../../public/images/note-edit-outline.svg";
-import pencilImage from "../../public/images/pencil-ruler-outline.svg";
-import downloadImage from "../../public/images/download-circle-outline.svg";
-import logo from "../../public/images/logo.png";
+import noteImage from "../images/note-edit-outline.svg";
+import pencilImage from "../images/pencil-ruler-outline.svg";
+import downloadImage from "../images/download-circle-outline.svg";
+import logo from "../images/logo.png";
 
 export default function SideBar() {
     return (
