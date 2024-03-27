@@ -1,7 +1,7 @@
 import "./App.css";
 import ResumeInput from "./components/ResumeInput";
-import ResumeOutput from "./components/ResumeOutput";
-import SideBar from "./components/SideBar";
+import ResumeOutput from "./components/ResumeOutput/ResumeOutput";
+import SideBar from "./components/Sidebar/SideBar";
 
 function App() {
     return (
