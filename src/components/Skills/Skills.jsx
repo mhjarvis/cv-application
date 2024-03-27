@@ -1,4 +1,5 @@
-import Inputs from "./Inputs";
+import Inputs from "../Inputs";
+import "./Skills.css";
 
 export default function Skills() {
     return (

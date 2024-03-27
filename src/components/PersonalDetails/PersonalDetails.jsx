@@ -1,4 +1,5 @@
-import Inputs from './Inputs';
+import Inputs from "../Inputs";
+import "./PersonalDetails.css";
 
 export default function PersonalDetails() {
     return (

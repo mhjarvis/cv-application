@@ -1,4 +1,5 @@
-import Inputs from "./Inputs";
+import Inputs from "../Inputs";
+import "./Education.css";
 
 export default function Education() {
     return (

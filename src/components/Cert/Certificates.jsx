@@ -1,4 +1,5 @@
-import Inputs from "./Inputs";
+import Inputs from "../Inputs";
+import "./Certificates.css";
 
 export default function Certificates() {
     return (

@@ -1,4 +1,5 @@
-import Inputs from "./Inputs";
+import Inputs from "../Inputs";
+import "./Experience.css";
 
 export default function Experience() {
     return (
