@@ -1,26 +1,23 @@
-import { useState } from "react";
+/* eslint-disable react/prop-types */
+
 import "./ButtonPanel.css";
 
-export default function ButtonPanel() {
-    const [tabSelected, setTabSelected] = useState("content");
-
-    function tabSelectHandler(event) {
-        setTabSelected(event.target.value);
-    }
-
+export default function ButtonPanel({ tab, onTabUpdate }) {
     return (
         <div className="button-panel">
             <button
-                className={tabSelected === "content" ? "active" : 'white'}
+                className={tab === "content" ? "active" : "white"}
+                id="content-button"
                 value="content"
-                onClick={tabSelectHandler}
+                onClick={onTabUpdate}
             >
                 Content
             </button>
             <button
-                className={tabSelected === "customize" ? "active" : 'white'}
+                className={tab === "customize" ? "active" : "white"}
+                id="customize-button"
                 value="customize"
-                onClick={tabSelectHandler}
+                onClick={onTabUpdate}
             >
                 Customize
             </button>
