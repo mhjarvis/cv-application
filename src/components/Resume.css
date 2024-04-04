@@ -4,14 +4,14 @@
     width: 100%;
     display: flex;
     justify-content: space-evenly;
+    background-color: rgb(240, 240, 240);
 }
 
 .input {
-    background-color: red;
     height: 100vh;
     width: 100%;
     max-width: 55rem;
-    min-width: 30rem;
+    min-width: 35rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -19,7 +19,6 @@
 }
 
 .output {
-    background-color: blue;
     height: 100vh;
     width: 100%;
     max-width: 80rem;
