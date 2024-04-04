@@ -1,0 +1,23 @@
+
+.main {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.input {
+    background-color: red;
+    height: 100vh;
+    width: 100%;
+    max-width: 55rem;
+    min-width: 30rem;
+}
+
+.output {
+    background-color: blue;
+    height: 100vh;
+    width: 100%;
+    max-width: 80rem;
+    min-width: 40rem;
+}
