@@ -1,5 +1,6 @@
 import "./Resume.css";
 import ButtonPanel from "./ButtonPanel/ButtonPanel";
+import Output from "./Output/Output";
 import { useState } from "react";
 
 export default function Resume() {
@@ -16,9 +17,7 @@ export default function Resume() {
                 BUTTON SECTION PERSONAL DETAILS EDUCATION DETAILS EXPERIENCE
                 DETAILS SKILLS CERTIFICATES
             </div>
-            <div className="output">
-                
-            </div>
+            <Output />
         </div>
     );
 }

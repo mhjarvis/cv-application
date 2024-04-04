@@ -1,21 +1,18 @@
-
 .main {
     height: 100%;
     width: 100%;
     display: flex;
     justify-content: space-evenly;
     background-color: rgb(240, 240, 240);
+    padding-top: 1rem;
 }
 
 .input {
     height: 100vh;
-    width: 100%;
-    max-width: 55rem;
-    min-width: 35rem;
+    width: 400px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 2rem;
 }
 
 .output {
