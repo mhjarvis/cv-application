@@ -5,6 +5,7 @@ import { useState } from "react";
 
 export default function Resume() {
     const [tabSelected, setTabSelected] = useState("content");
+    const [inputSelected, setInputSelected] = useState("personalInfo");
 
     function tabSelectHandler(event) {
         setTabSelected(event.target.value);
@@ -14,8 +15,12 @@ export default function Resume() {
         <div className="main">
             <div className="input">
                 <ButtonPanel tab={tabSelected} onTabUpdate={tabSelectHandler} />
-                BUTTON SECTION PERSONAL DETAILS EDUCATION DETAILS EXPERIENCE
-                DETAILS SKILLS CERTIFICATES
+
+                {inputSelected === "personalInfo" ? (
+                    <button>Personal Info</button>
+                ) : (
+                    ""
+                )}
             </div>
             <Output />
         </div>
