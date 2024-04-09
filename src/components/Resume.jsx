@@ -11,13 +11,23 @@ export default function Resume() {
         setTabSelected(event.target.value);
     }
 
+    function inputSelectedHandler(value) {
+        setInputSelected(value);
+    }
+
     return (
         <div className="main">
             <div className="input">
                 <ButtonPanel tab={tabSelected} onTabUpdate={tabSelectHandler} />
 
                 {inputSelected === "personalInfo" ? (
-                    <button>Personal Info</button>
+                    <button
+                        onClick={() => {
+                            inputSelectedHandler("personalInfo");
+                        }}
+                    >
+                        Personal Info
+                    </button>
                 ) : (
                     ""
                 )}
