@@ -1,4 +1,3 @@
-
 .output-container {
     background-color: white;
     width: 100%;
@@ -10,7 +9,21 @@
 
 .output-fullName {
     text-align: center;
-    font-size: 2rem;
+    font-size: 2.4rem;
     font-weight: 700;
-    margin-top: 2rem;
+    margin-top: 2.5rem;
+}
+
+.output-personal-info-secondary {
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-top: 1rem;
+}
+
+.output-personal-info-third {
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-top: 1rem;
 }

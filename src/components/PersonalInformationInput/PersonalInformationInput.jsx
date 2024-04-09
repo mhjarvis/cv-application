@@ -2,12 +2,9 @@
 import "./PersonalInformationInput.css";
 
 export default function PersonalInformationInput({
-    fullName,
-    email,
-    address,
-    phoneNumber,
     onPersonalUpdate,
     formClasses,
+    personal,
 }) {
     return (
         <div>
@@ -16,28 +13,42 @@ export default function PersonalInformationInput({
                 <input
                     type="text"
                     id="fullName"
-                    value={fullName}
+                    value={personal.fullName}
                     onChange={onPersonalUpdate}
                 />
                 <label htmlFor="email">Email</label>
                 <input
                     type="email"
                     id="email"
-                    value={email}
+                    value={personal.email}
                     onChange={onPersonalUpdate}
                 />
                 <label htmlFor="phoneNumber">Phone Number</label>
                 <input
                     type="text"
                     id="phoneNumber"
-                    value={phoneNumber}
+                    value={personal.phoneNumber}
                     onChange={onPersonalUpdate}
                 />
                 <label htmlFor="address">Address</label>
                 <input
                     type="text"
                     id="address"
-                    value={address}
+                    value={personal.address}
+                    onChange={onPersonalUpdate}
+                />
+                <label htmlFor="address">LinkedIn</label>
+                <input
+                    type="text"
+                    id="linkedIn"
+                    value={personal.linkedIn}
+                    onChange={onPersonalUpdate}
+                />{" "}
+                <label htmlFor="address">GitHub</label>
+                <input
+                    type="text"
+                    id="github"
+                    value={personal.github}
                     onChange={onPersonalUpdate}
                 />
             </form>

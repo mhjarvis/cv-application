@@ -17,6 +17,8 @@ export default function Resume() {
         email: "",
         address: "",
         phoneNumber: "",
+        linkedIn: "",
+        github: "",
     });
 
     function personalHandler(event) {
@@ -34,10 +36,7 @@ export default function Resume() {
                     <PersonalInformationInput
                         formClasses="personal-information-form"
                         onPersonalUpdate={personalHandler}
-                        fullName={personal.fullName}
-                        email={personal.email}
-                        address={personal.address}
-                        phoneNumber={personal.phoneNumber}
+                        personal={personal}
                     />
                 </section>
             </div>
