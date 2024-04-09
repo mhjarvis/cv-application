@@ -4,6 +4,7 @@ export default function PersonalInformationInput({
     fullName,
     email,
     onPersonalUpdate,
+    formClasses,
 }) {
     /*     function fullNameHandler(event) {
         setFullName(event.target.value);
@@ -15,7 +16,7 @@ export default function PersonalInformationInput({
 
     return (
         <div>
-            <form action="">
+            <form action="" className={formClasses}>
                 <label htmlFor="fullName">Full Name</label>
                 <input
                     type="text"

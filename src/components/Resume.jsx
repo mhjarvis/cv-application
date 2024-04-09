@@ -30,7 +30,7 @@ export default function Resume() {
                 <ButtonPanel tab={tabSelected} onTabUpdate={tabSelectHandler} />
                 <section className="input-section">
                     <PersonalInformationInput
-                        className="personal-information-container"
+                        formClasses="personal-information-form"
                         onPersonalUpdate={personalHandler}
                         fullName={personal.fullName}
                         email={personal.email}
