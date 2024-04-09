@@ -5,3 +5,12 @@
     height: 80rem;
     width: 60rem;
 }
+
+/*********************** Personal Infomration ***********************/
+
+.output-fullName {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-top: 2rem;
+}

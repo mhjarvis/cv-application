@@ -41,7 +41,7 @@ export default function Resume() {
                     />
                 </section>
             </div>
-            <Output />
+            <Output personal={personal} />
         </div>
     );
 }
