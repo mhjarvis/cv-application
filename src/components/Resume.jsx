@@ -13,12 +13,12 @@ export default function Resume() {
 
     /* Personal Information State and Update Function */
     const [personal, setPersonal] = useState({
-        fullName: "",
-        email: "",
-        address: "",
-        phoneNumber: "",
-        linkedIn: "",
-        github: "",
+        fullName: "Markus Jarvis",
+        email: "markus.h.jarvis@gmail.com",
+        address: "123 Main Ave SE, Huntsville, AL 36362",
+        phoneNumber: "855.545.3421",
+        linkedIn: "linkedin.com/markusjarvis",
+        github: "github.com/mhjarvis",
     });
 
     function personalHandler(event) {
