@@ -15,6 +15,8 @@ export default function Resume() {
     const [personal, setPersonal] = useState({
         fullName: "",
         email: "",
+        address: "",
+        phoneNumber: "",
     });
 
     function personalHandler(event) {
@@ -34,6 +36,8 @@ export default function Resume() {
                         onPersonalUpdate={personalHandler}
                         fullName={personal.fullName}
                         email={personal.email}
+                        address={personal.address}
+                        phoneNumber={personal.phoneNumber}
                     />
                 </section>
             </div>
