@@ -39,14 +39,22 @@ export default function Output({ personal }) {
                     </span>
                 </div>
                 <div className="output-personal-info-third">
-                    <img
-                        src={icon_linkedin}
-                        alt="linkedIn icon"
-                        className="icon"
-                    />
-                    {personal.linkedIn}{" "}
-                    <img src={icon_github} alt="github icon" className="icon" />
-                    {personal.github}
+                    <span>
+                        <img
+                            src={icon_linkedin}
+                            alt="linkedIn icon"
+                            className="icon"
+                        />
+                        {personal.linkedIn}{" "}
+                    </span>
+                    <span>
+                        <img
+                            src={icon_github}
+                            alt="github icon"
+                            className="icon"
+                        />
+                        {personal.github}
+                    </span>
                 </div>
             </section>
         </div>

@@ -9,6 +9,7 @@ export default function PersonalInformationInput({
     return (
         <div>
             <form action="" className={formClasses}>
+                <h1 className="personal-info-title">Personal Information</h1>
                 <label htmlFor="fullName">Full Name</label>
                 <input
                     type="text"

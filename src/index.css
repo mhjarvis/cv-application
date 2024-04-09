@@ -4,6 +4,7 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+
 html,
 body,
 div,
@@ -143,6 +144,12 @@ table {
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+    font-family: "Vollkorn", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
 }
 
 html {

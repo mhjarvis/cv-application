@@ -1,5 +1,10 @@
 /************************* Personal Information *************************/
 
+.personal-info-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin: 2rem 0 0 0;
+}
 .personal-information-form {
     display: flex;
     flex-direction: column;

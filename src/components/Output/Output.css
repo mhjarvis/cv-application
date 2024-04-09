@@ -16,7 +16,26 @@
 
 .output-personal-info-secondary {
     display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-top: 1rem;
+}
+
+.output-personal-info-secondary span, .output-personal-info-third span {
+    display: flex;
     align-items: center;
+    justify-content: center;
+    height: 100%;
+    margin: 0 .5rem;
+}
+
+.output-personal-info-third {
+    display: flex;
+    flex-direction: row;
     justify-content: center;
     width: 100%;
     text-align: center;
@@ -26,14 +45,16 @@
 }
 
 .output-personal-info-third {
-    text-align: center;
-    font-size: 1.1rem;
-    font-weight: 500;
-    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    margin: 1rem 0;
 }
 
 /************************* Icons *************************/
 
 .icon {
-    width: 1rem;
+    width: .8rem;
+    margin-right: 2px;
 }
