@@ -7,6 +7,7 @@ import icon_github from "../../images/icon_github.svg";
 
 import "./Output.css";
 import EducationOutput from "../Education/EducationOutput";
+import ProfessionalExpierenceOutput from "../ProfessionalExperience/ProfessionalExperienceOutput";
 
 export default function Output({ personal, education }) {
     return (
@@ -59,6 +60,7 @@ export default function Output({ personal, education }) {
                 </div>
             </section>
             <EducationOutput education={education} />
+            <ProfessionalExpierenceOutput />
         </div>
     );
 }
