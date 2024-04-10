@@ -1,0 +1,37 @@
+/************************* Professional Experience *************************/
+
+.professional-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin: 2rem 0 0 0;
+}
+.professional-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 400px;
+
+    background-color: white;
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    border-radius: 12px;
+}
+
+.professional-form > label {
+    width: 90%;
+    margin-top: 1rem;
+    margin-bottom: 0.3rem;
+    font-weight: 500;
+}
+
+.professional-form > input {
+    width: 90%;
+}
+
+.professional-form > label:first-child {
+    margin-top: 2rem;
+}
+
+.professional-form > input:last-child {
+    margin-bottom: 2rem;
+}
