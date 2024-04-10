@@ -4,6 +4,7 @@ import Output from "./Output/Output";
 import { useState } from "react";
 import PersonalInformationInput from "./PersonalInformationInput/PersonalInformationInput";
 import Education from "./Education/Education";
+import ProfessionalExpierence from "./ProfessionalExperience/ProfessionalExperience";
 
 export default function Resume() {
     const [tabSelected, setTabSelected] = useState("content");
@@ -46,6 +47,18 @@ export default function Resume() {
         });
     }
 
+    /* Professional Experience Information */
+    const [professional, setProfessional] = useState({
+        employer: "",
+    });
+
+    function professionalHandler(event) {
+        setProfessional({
+            ...professional, // copy the old fields
+            [event.target.id]: event.target.value,
+        });
+    }
+
     return (
         <div className="main">
             <div className="input">
@@ -60,6 +73,11 @@ export default function Resume() {
                         formClasses="education-form"
                         onEducationUpdate={educationHandler}
                         education={education}
+                    />
+                    <ProfessionalExpierence
+                        formClasses="professional-form"
+                        onProfessionalUpdate={professionalHandler}
+                        professional={professional}
                     />
                 </section>
             </div>
