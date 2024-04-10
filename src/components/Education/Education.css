@@ -5,7 +5,7 @@
     font-weight: 700;
     margin: 2rem 0 0 0;
 }
-.personal-information-form {
+.education-form {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -17,24 +17,21 @@
     border-radius: 12px;
 }
 
-.personal-information-form > label {
+.education-form > label {
     width: 90%;
     margin-top: 1rem;
     margin-bottom: 0.3rem;
     font-weight: 500;
 }
 
-.personal-information-form > input {
+.education-form > input {
     width: 90%;
 }
 
-.personal-information-form > label:first-child {
+.education-form > label:first-child {
     margin-top: 2rem;
 }
 
-.personal-information-form > input:last-child {
+.education-form > input:last-child {
     margin-bottom: 2rem;
 }
-
-
-
