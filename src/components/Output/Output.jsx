@@ -7,8 +7,9 @@ import icon_github from "../../images/icon_github.svg";
 
 import "./Output.css";
 import Seperator from "./Seperator";
+import EducationOutput from "../Education/EducationOutput";
 
-export default function Output({ personal }) {
+export default function Output({ personal, education }) {
     return (
         <div className="output-container">
             <section>
@@ -59,6 +60,7 @@ export default function Output({ personal }) {
                 </div>
             </section>
             <Seperator />
+            <EducationOutput education={education} />
         </div>
     );
 }
