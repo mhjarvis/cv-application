@@ -1,5 +1,6 @@
 /* eslint-disable react/prop-types */
 import "./PersonalInformationInput.css";
+import LabelWithInput from "../LabelWithInput";
 
 export default function PersonalInformationInput({
     onPersonalUpdate,
@@ -10,10 +11,10 @@ export default function PersonalInformationInput({
         <div>
             <form action="" className={formClasses}>
                 <h1 className="personal-info-title">Personal Information</h1>
-                <label htmlFor="fullName">Full Name</label>
-                <input
-                    type="text"
+                <LabelWithInput
                     id="fullName"
+                    labelTitle="FullName"
+                    type="text"
                     value={personal.fullName}
                     onChange={onPersonalUpdate}
                 />

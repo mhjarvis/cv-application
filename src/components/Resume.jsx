@@ -3,6 +3,7 @@ import ButtonPanel from "./ButtonPanel/ButtonPanel";
 import Output from "./Output/Output";
 import { useState } from "react";
 import PersonalInformationInput from "./PersonalInformationInput/PersonalInformationInput";
+import Education from "./Education/Education";
 
 export default function Resume() {
     const [tabSelected, setTabSelected] = useState("content");
@@ -38,6 +39,7 @@ export default function Resume() {
                         onPersonalUpdate={personalHandler}
                         personal={personal}
                     />
+                    <Education />
                 </section>
             </div>
             <Output personal={personal} />
