@@ -14,44 +14,44 @@ export default function PersonalInformationInput({
                 <LabelWithInput
                     id="fullName"
                     labelTitle="FullName"
-                    type="text"
+                    inputType="text"
                     value={personal.fullName}
-                    onChange={onPersonalUpdate}
+                    onChangeHandler={onPersonalUpdate}
                 />
-                <label htmlFor="email">Email</label>
-                <input
-                    type="email"
+                <LabelWithInput
                     id="email"
+                    labelTitle="Email"
+                    inputType="text"
                     value={personal.email}
-                    onChange={onPersonalUpdate}
+                    onChangeHandler={onPersonalUpdate}
                 />
-                <label htmlFor="phoneNumber">Phone Number</label>
-                <input
-                    type="text"
+                <LabelWithInput
                     id="phoneNumber"
+                    labelTitle="Phone Number"
+                    inputType="text"
                     value={personal.phoneNumber}
-                    onChange={onPersonalUpdate}
-                />
-                <label htmlFor="address">Address</label>
-                <input
-                    type="text"
-                    id="address"
-                    value={personal.address}
-                    onChange={onPersonalUpdate}
-                />
-                <label htmlFor="address">LinkedIn</label>
-                <input
-                    type="text"
-                    id="linkedIn"
-                    value={personal.linkedIn}
-                    onChange={onPersonalUpdate}
+                    onChangeHandler={onPersonalUpdate}
                 />{" "}
-                <label htmlFor="address">GitHub</label>
-                <input
-                    type="text"
+                <LabelWithInput
+                    id="address"
+                    labelTitle="Address"
+                    inputType="text"
+                    value={personal.address}
+                    onChangeHandler={onPersonalUpdate}
+                />
+                <LabelWithInput
+                    id="linkedIn"
+                    labelTitle="linkedIn"
+                    inputType="text"
+                    value={personal.linkedIn}
+                    onChangeHandler={onPersonalUpdate}
+                />{" "}
+                <LabelWithInput
                     id="github"
+                    labelTitle="GitHub"
+                    inputType="text"
                     value={personal.github}
-                    onChange={onPersonalUpdate}
+                    onChangeHandler={onPersonalUpdate}
                 />
             </form>
         </div>

@@ -29,6 +29,23 @@ export default function Resume() {
         });
     }
 
+    /* Eductation Information */
+    const [education, setEducation] = useState({
+        degree: "Psychology",
+        school: "University of Alabama",
+        schoolCity: "Birmingham",
+        schoolState: "Alabama",
+        schoolStartDate: "Sep 2017",
+        schoolEndDate: "May 2021",
+    });
+
+    function educationHandler(event) {
+        setEducation({
+            ...education, // copy the old fields
+            [event.target.id]: event.target.value,
+        });
+    }
+
     return (
         <div className="main">
             <div className="input">
@@ -39,10 +56,14 @@ export default function Resume() {
                         onPersonalUpdate={personalHandler}
                         personal={personal}
                     />
-                    <Education />
+                    <Education
+                        formClasses="education-form"
+                        onEducationUpdate={educationHandler}
+                        education={education}
+                    />
                 </section>
             </div>
-            <Output personal={personal} />
+            <Output personal={personal} education={education} />
         </div>
     );
 }
