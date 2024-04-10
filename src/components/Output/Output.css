@@ -1,4 +1,7 @@
 .output-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color: white;
     width: 100%;
     height: 80rem;
@@ -12,6 +15,7 @@
     font-size: 2.4rem;
     font-weight: 700;
     margin-top: 2.5rem;
+    margin-bottom: 1rem;
 }
 
 .output-personal-info-secondary {
@@ -22,15 +26,14 @@
     text-align: center;
     font-size: 1.1rem;
     font-weight: 500;
-    margin-top: 1rem;
 }
 
-.output-personal-info-secondary span, .output-personal-info-third span {
+.output-personal-info-secondary span,
+.output-personal-info-third span {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100%;
-    margin: 0 .5rem;
+    margin: 0 0.5rem;
 }
 
 .output-personal-info-third {
@@ -44,17 +47,9 @@
     margin-top: 1rem;
 }
 
-.output-personal-info-third {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    margin: 1rem 0;
-}
-
 /************************* Icons *************************/
 
 .icon {
-    width: .8rem;
+    width: 0.8rem;
     margin-right: 2px;
 }

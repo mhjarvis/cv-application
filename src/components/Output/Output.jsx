@@ -6,6 +6,7 @@ import icon_linkedin from "../../images/icon_linkedin.svg";
 import icon_github from "../../images/icon_github.svg";
 
 import "./Output.css";
+import Seperator from "./Seperator";
 
 export default function Output({ personal }) {
     return (
@@ -57,6 +58,7 @@ export default function Output({ personal }) {
                     </span>
                 </div>
             </section>
+            <Seperator />
         </div>
     );
 }
