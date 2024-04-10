@@ -6,7 +6,6 @@ import icon_linkedin from "../../images/icon_linkedin.svg";
 import icon_github from "../../images/icon_github.svg";
 
 import "./Output.css";
-import Seperator from "./Seperator";
 import EducationOutput from "../Education/EducationOutput";
 
 export default function Output({ personal, education }) {
@@ -59,7 +58,6 @@ export default function Output({ personal, education }) {
                     </span>
                 </div>
             </section>
-            <Seperator />
             <EducationOutput education={education} />
         </div>
     );

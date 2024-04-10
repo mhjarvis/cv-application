@@ -1,0 +1,24 @@
+/********************* Education Output ********************/
+
+.education-output-component {
+    width: 90%;
+}
+
+.education-output-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.education-output-component > h1 {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.education-output-left {
+    font-weight: 700;
+    font-style: italic;
+}
+
+.edcation-output-right {
+
+}
