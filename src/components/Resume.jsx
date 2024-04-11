@@ -2,7 +2,7 @@ import "./Resume.css";
 import ButtonPanel from "./ButtonPanel/ButtonPanel";
 import Output from "./Output/Output";
 import { useState } from "react";
-import PersonalInformationInput from "./PersonalInformationInput/PersonalInformationInput";
+import PersonalInformationInput from "./PersonalInformationInput/PersonalInformation";
 import Education from "./Education/Education";
 import ProfessionalExpierence from "./ProfessionalExperience/ProfessionalExperience";
 
