@@ -9,6 +9,16 @@ import "./Output.css";
 import EducationOutput from "../Education/EducationOutput";
 import ProfessionalExpierenceOutput from "../ProfessionalExperience/ProfessionalExperienceOutput";
 
+const emailIcon = <img src={icon_email} alt="phone icon" className="icon" />;
+const phoneIcon = <img src={icon_phone} alt="phone icon" className="icon" />;
+const addressIcon = (
+    <img src={icon_address} alt="address icon" className="icon" />
+);
+const linkedInIcon = (
+    <img src={icon_linkedin} alt="linkedIn icon" className="icon" />
+);
+const githubIcon = <img src={icon_github} alt="github icon" className="icon" />;
+
 export default function Output({ personal, education, professional }) {
     return (
         <div className="output-container">
@@ -16,49 +26,25 @@ export default function Output({ personal, education, professional }) {
                 <h1 className="output-fullName">{personal.fullName}</h1>
                 <div className="output-personal-info-secondary">
                     <span>
-                        {personal.email ? (
-                            <img
-                                src={icon_email}
-                                alt="email icon"
-                                className="icon"
-                            />
-                        ) : (
-                            ""
-                        )}
+                        {personal.email ? emailIcon : ""}   
                         {personal.email}
                     </span>
                     <span>
-                        <img
-                            src={icon_phone}
-                            alt="phone icon"
-                            className="icon"
-                        />
+                        {personal.phoneNumber ? phoneIcon : ""}
                         {personal.phoneNumber}
                     </span>
                     <span>
-                        <img
-                            src={icon_address}
-                            alt="address icon"
-                            className="icon"
-                        />
+                        {personal.address ? addressIcon : ""}
                         {personal.address}
                     </span>
                 </div>
                 <div className="output-personal-info-third">
                     <span>
-                        <img
-                            src={icon_linkedin}
-                            alt="linkedIn icon"
-                            className="icon"
-                        />
+                        {personal.linkedIn ? linkedInIcon : ""}
                         {personal.linkedIn}{" "}
                     </span>
                     <span>
-                        <img
-                            src={icon_github}
-                            alt="github icon"
-                            className="icon"
-                        />
+                        {personal.github ? githubIcon : ""}
                         {personal.github}
                     </span>
                 </div>
