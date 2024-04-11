@@ -1,0 +1,21 @@
+.component-buttons-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 80%;
+    margin: 2rem;
+}
+
+.component-buttons-container > button {
+    width: 10rem;
+    height: 3.4rem;
+    font-size: 1.5rem;
+    background-color: rgb(64, 64, 64);
+    border: none;
+    border-radius: 0.4em;
+}
+
+.component-buttons-container > button:hover {
+    background-color: rgb(103, 102, 102);
+    cursor: pointer;
+}
