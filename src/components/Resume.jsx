@@ -85,6 +85,16 @@ export default function Resume() {
             github: "",
         });
     }
+    function clearProfessional() {
+        setProfessional({
+            employer: "",
+            jobTitle: "",
+            employmentStartDate: "",
+            employmentEndDate: "",
+            location: "",
+            description: "",
+        });
+    }
 
     return (
         <div className="main">
@@ -107,6 +117,7 @@ export default function Resume() {
                         formClasses="professional-form"
                         onProfessionalUpdate={professionalHandler}
                         professional={professional}
+                        clearProfessional={clearProfessional}
                     />
                 </section>
             </div>

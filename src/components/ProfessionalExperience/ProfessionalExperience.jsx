@@ -7,6 +7,7 @@ export default function ProfessionalExpierence({
     professional,
     onProfessionalUpdate,
     formClasses,
+    clearProfessional
 }) {
     return (
         <div>
@@ -55,7 +56,7 @@ export default function ProfessionalExpierence({
                     value={professional.description}
                     onChangeHandler={onProfessionalUpdate}
                 />
-                <ComponentButtons />
+                <ComponentButtons clearComponent={clearProfessional}/>
             </form>
         </div>
     );
