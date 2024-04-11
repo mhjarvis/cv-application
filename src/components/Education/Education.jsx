@@ -7,6 +7,7 @@ export default function Education({
     education,
     onEducationUpdate,
     formClasses,
+    clearEducation
 }) {
     return (
         <div>
@@ -54,7 +55,7 @@ export default function Education({
                     value={education.schoolEndDate}
                     onChangeHandler={onEducationUpdate}
                 />{" "}
-                <ComponentButtons />
+                <ComponentButtons clearEducation={clearEducation} />
             </form>
         </div>
     );
