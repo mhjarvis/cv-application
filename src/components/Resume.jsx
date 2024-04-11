@@ -32,7 +32,7 @@ export default function Resume() {
 
     /* Eductation Information */
     const [education, setEducation] = useState({
-        degree: "Psychology",
+        degree: "",
         school: "University of Alabama",
         schoolCity: "Birmingham",
         schoolState: "Alabama",
@@ -65,6 +65,17 @@ export default function Resume() {
         });
     }
 
+    function clearEducation() {
+        setEducation({
+            degree: "",
+            school: "",
+            schoolCity: "",
+            schoolState: "",
+            schoolStartDate: "",
+            schoolEndDate: "",
+        });
+    }
+
     return (
         <div className="main">
             <div className="input">
@@ -79,6 +90,7 @@ export default function Resume() {
                         formClasses="education-form"
                         onEducationUpdate={educationHandler}
                         education={education}
+                        clearEducation={clearEducation}
                     />
                     <ProfessionalExpierence
                         formClasses="professional-form"
