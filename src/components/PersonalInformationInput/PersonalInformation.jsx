@@ -14,9 +14,7 @@ export default function PersonalInformationInput({
     const [showPersonal, setShowPersonal] = useState(true);
 
     function setShowPersonalHandler() {
-        setShowPersonal(() => {
-            !showPersonal;
-        });
+        setShowPersonal((prevVal) => !prevVal);
     }
 
     const expandIcon = (
@@ -25,7 +23,7 @@ export default function PersonalInformationInput({
 
     const personalInformation = (
         <div>
-            <form action="" className={formClasses}>
+            <div action="" className={formClasses}>
                 <h1 className="personal-info-title">
                     Personal Information{" "}
                     <button
@@ -78,12 +76,12 @@ export default function PersonalInformationInput({
                     onChangeHandler={onPersonalUpdate}
                 />
                 <ComponentButtons clearComponent={clearPersonal} />
-            </form>
+            </div>
         </div>
     );
 
     const hidePersonalInformation = (
-        <form action="" className={formClasses}>
+        <div action="" className={formClasses}>
             <h1 className="personal-info-title personal-info-title-hidden">
                 Personal Information{" "}
                 <button
@@ -93,7 +91,7 @@ export default function PersonalInformationInput({
                     {expandIcon}
                 </button>
             </h1>
-        </form>
+        </div>
     );
 
     return showPersonal ? personalInformation : hidePersonalInformation;

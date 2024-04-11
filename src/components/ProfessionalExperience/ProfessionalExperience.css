@@ -1,6 +1,9 @@
 /************************* Professional Experience *************************/
 
 .professional-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     font-size: 2.5rem;
     font-weight: 700;
     margin: 2rem 0 0 0;
@@ -37,4 +40,21 @@
     flex-wrap: wrap;
     margin-bottom: 2rem;
     height: 6rem;
+}
+
+.professional-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 2rem;
+    width: 80%;
+}
+
+.professional-buttons > button {
+    width: 10rem;
+    height: 3rem;
+}
+
+.professional-title-hidden {
+    margin-bottom: 2rem;
 }

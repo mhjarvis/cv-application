@@ -11,12 +11,11 @@ export default function Education({
     formClasses,
     clearEducation,
 }) {
-    const [showEducation, setShowEducation] = useState(true);
+    /* Education component shows as collapsed on initial render */
+    const [showEducation, setShowEducation] = useState(false);
 
     function setShowEducationHandler() {
-        setShowEducation(() => {
-            !showEducation;
-        });
+        setShowEducation((lastVal) => !lastVal);
     }
 
     const expandIcon = (
@@ -25,12 +24,12 @@ export default function Education({
 
     const educationInformation = (
         <div>
-            <form action="" className={formClasses}>
+            <div className={formClasses}>
                 <h1 className="education-title">
                     Education{" "}
                     <button
                         className="expand-button"
-                        onClick={setShowEducationHandler}
+                    onClick={setShowEducationHandler}
                     >
                         {expandIcon}
                     </button>
@@ -78,11 +77,11 @@ export default function Education({
                     onChangeHandler={onEducationUpdate}
                 />{" "}
                 <ComponentButtons clearComponent={clearEducation} />
-            </form>
+            </div>
         </div>
     );
     const educationInformationHidden = (
-        <form action="" className={formClasses}>
+        <div className={formClasses}>
             <h1 className="education-title education-title-hidden">
                 Education{" "}
                 <button
@@ -92,7 +91,7 @@ export default function Education({
                     {expandIcon}
                 </button>
             </h1>
-        </form>
+        </div>
     );
 
     return showEducation ? educationInformation : educationInformationHidden;

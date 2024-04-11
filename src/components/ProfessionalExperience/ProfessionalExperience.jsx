@@ -1,4 +1,6 @@
 /* eslint-disable react/prop-types */
+import { useState } from "react";
+import icon_expand from "../../images/icon_expand.svg";
 import "./ProfessionalExperience.css";
 import LabelWithInput from "../LabelWithInput";
 import ComponentButtons from "../ComponentButtons";
@@ -10,10 +12,33 @@ export default function ProfessionalExpierence({
     formClasses,
     clearProfessional,
 }) {
-    return (
+    const [showProfessional, setShowProfessional] = useState(false);
+
+    function setShowProfessionalHandler() {
+        setShowProfessional((lastVal) => !lastVal);
+    }
+
+    const expandIcon = (
+        <img src={icon_expand} alt="expand icon" className="expand-icon" />
+    );
+
+
+    function some(e) {
+        e.preventDefault()
+    }
+
+    const professionalInformation = (
         <div>
-            <form action="" className={formClasses}>
-                <h1 className="professional-title">Professional Experience</h1>
+            <div action="" onSubmit={some} className={formClasses}>
+                <h1 className="professional-title">
+                    Professional Experience
+                    <button
+                        className="expand-button"
+                        onClick={setShowProfessionalHandler}
+                    >
+                        {expandIcon}
+                    </button>
+                </h1>
                 <LabelWithInput
                     id="employer"
                     labelTitle="Employer"
@@ -57,7 +82,23 @@ export default function ProfessionalExpierence({
                     onChangeHandler={onProfessionalUpdate}
                 />
                 <ComponentButtons clearComponent={clearProfessional} />
-            </form>
+            </div>
         </div>
     );
+
+    const professionalInformationHidden = (
+        <div action="" className={formClasses}>
+            <h1 className="professional-title professional-title-hidden">
+                Professional Experience
+                <button
+                    className="expand-button"
+                    onClick={setShowProfessionalHandler}
+                >
+                    {expandIcon}
+                </button>
+            </h1>
+        </div>
+    );
+
+    return showProfessional ? professionalInformation : professionalInformationHidden
 }
