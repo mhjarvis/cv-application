@@ -2,6 +2,7 @@
 import "./PersonalInformation.css";
 import LabelWithInput from "../LabelWithInput";
 import ComponentButtons from "../ComponentButtons";
+import icon_expand from "../../images/icon_expand.svg";
 import { useState } from "react";
 
 export default function PersonalInformationInput({
@@ -18,12 +19,21 @@ export default function PersonalInformationInput({
         });
     }
 
+    const expandIcon = (
+        <img src={icon_expand} alt="expand icon" className="expand-icon" />
+    );
+
     const personalInformation = (
         <div>
             <form action="" className={formClasses}>
                 <h1 className="personal-info-title">
                     Personal Information{" "}
-                    <button onClick={setShowPersonalHandler}>Arrow</button>
+                    <button
+                        className="expand-button"
+                        onClick={setShowPersonalHandler}
+                    >
+                        {expandIcon}
+                    </button>
                 </h1>
                 <LabelWithInput
                     id="fullName"
@@ -76,7 +86,12 @@ export default function PersonalInformationInput({
         <form action="" className={formClasses}>
             <h1 className="personal-info-title personal-info-title-hidden">
                 Personal Information{" "}
-                <button onClick={setShowPersonalHandler}>Arrow</button>
+                <button
+                    className="expand-button"
+                    onClick={setShowPersonalHandler}
+                >
+                    {expandIcon}
+                </button>
             </h1>
         </form>
     );

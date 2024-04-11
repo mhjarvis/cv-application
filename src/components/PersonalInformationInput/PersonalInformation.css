@@ -1,9 +1,13 @@
 /************************* Personal Information *************************/
 
 .personal-info-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     font-size: 2.5rem;
     font-weight: 700;
     margin: 2rem 0 0 0;
+
 }
 .personal-information-form {
     display: flex;
@@ -38,4 +42,16 @@
 
 .personal-info-title-hidden {
     margin-bottom: 2rem;
+}
+
+.expand-button {
+    margin: 0 1rem;
+    display: flex;
+    align-items: center;
+    border: none;
+    background-color: white;
+}
+
+.expand-icon {
+    width: 3rem;
 }
