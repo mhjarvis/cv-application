@@ -9,7 +9,11 @@ import "./Output.css";
 import EducationOutput from "../Education/EducationOutput";
 import ProfessionalExpierenceOutput from "../ProfessionalExperience/ProfessionalExperienceOutput";
 
-export default function Output({ personal, education, professional }) {
+export default function Output({
+    personal,
+    education,
+    professional,
+}) {
     return (
         <div className="output-container">
             <section>
