@@ -49,7 +49,13 @@ export default function Resume() {
 
     /* Professional Experience Information */
     const [professional, setProfessional] = useState({
-        employer: "",
+        employer: "U.S. Army",
+        jobTitle: "Soldier",
+        employmentStartDate: "January 2014",
+        employmentEndDate: "January 2020",
+        location: "Ft. Benning, GA",
+        description:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
     });
 
     function professionalHandler(event) {
@@ -81,7 +87,11 @@ export default function Resume() {
                     />
                 </section>
             </div>
-            <Output personal={personal} education={education} />
+            <Output
+                personal={personal}
+                education={education}
+                professional={professional}
+            />
         </div>
     );
 }

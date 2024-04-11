@@ -1,0 +1,21 @@
+/********************* Professional Experience Output ********************/
+
+.professional-output-component {
+    margin-top: 1rem;
+    width: 90%;
+}
+
+.professional-output-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.professional-output-component > h1 {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.professional-output-top {
+    font-weight: 700;
+    font-style: italic;
+}

@@ -9,7 +9,7 @@ import "./Output.css";
 import EducationOutput from "../Education/EducationOutput";
 import ProfessionalExpierenceOutput from "../ProfessionalExperience/ProfessionalExperienceOutput";
 
-export default function Output({ personal, education }) {
+export default function Output({ personal, education, professional }) {
     return (
         <div className="output-container">
             <section>
@@ -60,7 +60,7 @@ export default function Output({ personal, education }) {
                 </div>
             </section>
             <EducationOutput education={education} />
-            <ProfessionalExpierenceOutput />
+            <ProfessionalExpierenceOutput professional={professional} />
         </div>
     );
 }

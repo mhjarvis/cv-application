@@ -18,6 +18,42 @@ export default function ProfessionalExpierence({
                     value={professional.employer}
                     onChangeHandler={onProfessionalUpdate}
                 />
+                <LabelWithInput
+                    id="jobTitle"
+                    labelTitle="Job Title"
+                    inputType="text"
+                    value={professional.jobTitle}
+                    onChangeHandler={onProfessionalUpdate}
+                />{" "}
+                <LabelWithInput
+                    id="employmentStartDate"
+                    labelTitle="Start Date"
+                    inputType="text"
+                    value={professional.employmentStartDate}
+                    onChangeHandler={onProfessionalUpdate}
+                />{" "}
+                <LabelWithInput
+                    id="employmentEndDate"
+                    labelTitle="End Date"
+                    inputType="text"
+                    value={professional.employmentEndDate}
+                    onChangeHandler={onProfessionalUpdate}
+                />{" "}
+                <LabelWithInput
+                    id="location"
+                    labelTitle="Location"
+                    inputType="text"
+                    value={professional.location}
+                    onChangeHandler={onProfessionalUpdate}
+                />{" "}
+                <LabelWithInput
+                    id="description"
+                    labelTitle="Description"
+                    inputType="textarea"
+                    
+                    value={professional.description}
+                    onChangeHandler={onProfessionalUpdate}
+                />
             </form>
         </div>
     );
