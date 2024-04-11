@@ -8,29 +8,6 @@ import ProfessionalExpierence from "./ProfessionalExperience/ProfessionalExperie
 
 export default function Resume() {
     const [tabSelected, setTabSelected] = useState("content");
-
-    function tabSelectHandler(event) {
-        setTabSelected(event.target.value);
-    }
-
-    /* Personal Information State and Update Function */
-    const [personal, setPersonal] = useState({
-        fullName: "Markus Jarvis",
-        email: "markus.h.jarvis@gmail.com",
-        address: "123 Main Ave SE, Huntsville, AL 36362",
-        phoneNumber: "855.545.3421",
-        linkedIn: "linkedin.com/markusjarvis",
-        github: "github.com/mhjarvis",
-    });
-
-    function personalHandler(event) {
-        setPersonal({
-            ...personal, // copy the old fields
-            [event.target.id]: event.target.value,
-        });
-    }
-
-    /* Eductation Information */
     const [education, setEducation] = useState({
         degree: "",
         school: "University of Alabama",
@@ -39,15 +16,14 @@ export default function Resume() {
         schoolStartDate: "Sep 2017",
         schoolEndDate: "May 2021",
     });
-
-    function educationHandler(event) {
-        setEducation({
-            ...education, // copy the old fields
-            [event.target.id]: event.target.value,
-        });
-    }
-
-    /* Professional Experience Information */
+    const [personal, setPersonal] = useState({
+        fullName: "Markus Jarvis",
+        email: "markus.h.jarvis@gmail.com",
+        address: "123 Main Ave SE, Huntsville, AL 36362",
+        phoneNumber: "855.545.3421",
+        linkedIn: "linkedin.com/markusjarvis",
+        github: "github.com/mhjarvis",
+    });
     const [professional, setProfessional] = useState({
         employer: "U.S. Army",
         jobTitle: "Soldier",
@@ -57,12 +33,36 @@ export default function Resume() {
         description:
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
     });
+    const [educationArr, setEducationArr] = useState([]);
+
+    function tabSelectHandler(event) {
+        setTabSelected(event.target.value);
+    }
+
+    function personalHandler(event) {
+        setPersonal({
+            ...personal, // copy the old fields
+            [event.target.id]: event.target.value,
+        });
+    }
+
+    function educationHandler(event) {
+        setEducation({
+            ...education, // copy the old fields
+            [event.target.id]: event.target.value,
+        });
+    }
 
     function professionalHandler(event) {
         setProfessional({
             ...professional, // copy the old fields
             [event.target.id]: event.target.value,
         });
+    }
+
+    function addToEducationArray() {
+        console.log("poop");
+        setEducationArr([]);
     }
 
     function clearEducation() {
@@ -111,6 +111,8 @@ export default function Resume() {
                         formClasses="education-form"
                         onEducationUpdate={educationHandler}
                         education={education}
+                        educationArr={educationArr}
+                        onAddToEducationArr={addToEducationArray}
                         clearEducation={clearEducation}
                     />
                     <ProfessionalExpierence

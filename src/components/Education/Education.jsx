@@ -7,12 +7,13 @@ import "./Education.css";
 
 export default function Education({
     education,
+    onAddToEducationArr,
     onEducationUpdate,
     formClasses,
     clearEducation,
 }) {
     /* Education component shows as collapsed on initial render */
-    const [showEducation, setShowEducation] = useState(false);
+    const [showEducation, setShowEducation] = useState(true);
 
     function setShowEducationHandler() {
         setShowEducation((lastVal) => !lastVal);
@@ -29,11 +30,13 @@ export default function Education({
                     Education{" "}
                     <button
                         className="expand-button"
-                    onClick={setShowEducationHandler}
+                        onClick={setShowEducationHandler}
                     >
                         {expandIcon}
                     </button>
                 </h1>
+                {/*                 {educationArr.length > 0 ? console.log(educationArr) : console.log('nothing')}
+                 */}{" "}
                 <LabelWithInput
                     id="degree"
                     labelTitle="Degree"
@@ -76,7 +79,10 @@ export default function Education({
                     value={education.schoolEndDate}
                     onChangeHandler={onEducationUpdate}
                 />{" "}
-                <ComponentButtons clearComponent={clearEducation} />
+                <ComponentButtons
+                    clearComponent={clearEducation}
+                    onAddToEducationArr={onAddToEducationArr}
+                />
             </div>
         </div>
     );
