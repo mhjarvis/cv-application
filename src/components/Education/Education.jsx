@@ -1,4 +1,5 @@
 /* eslint-disable react/prop-types */
+import ComponentButtons from "../ComponentButtons";
 import LabelWithInput from "../LabelWithInput";
 import "./Education.css";
 
@@ -52,7 +53,8 @@ export default function Education({
                     inputType="text"
                     value={education.schoolEndDate}
                     onChangeHandler={onEducationUpdate}
-                />
+                />{" "}
+                <ComponentButtons />
             </form>
         </div>
     );

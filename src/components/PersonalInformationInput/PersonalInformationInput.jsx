@@ -1,6 +1,7 @@
 /* eslint-disable react/prop-types */
 import "./PersonalInformationInput.css";
 import LabelWithInput from "../LabelWithInput";
+import ComponentButtons from "../ComponentButtons";
 
 export default function PersonalInformationInput({
     onPersonalUpdate,
@@ -53,6 +54,7 @@ export default function PersonalInformationInput({
                     value={personal.github}
                     onChangeHandler={onPersonalUpdate}
                 />
+                <ComponentButtons />
             </form>
         </div>
     );

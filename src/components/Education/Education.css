@@ -35,3 +35,17 @@
 .education-form > input:last-child {
     margin-bottom: 2rem;
 }
+
+.education-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 2rem;
+    width: 80%;
+}
+
+.education-buttons > button {
+    width: 10rem;
+    height: 3rem;
+}
+

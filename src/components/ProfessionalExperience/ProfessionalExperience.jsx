@@ -1,6 +1,7 @@
 /* eslint-disable react/prop-types */
 import "./ProfessionalExperience.css";
 import LabelWithInput from "../LabelWithInput";
+import ComponentButtons from "../ComponentButtons";
 
 export default function ProfessionalExpierence({
     professional,
@@ -54,6 +55,7 @@ export default function ProfessionalExpierence({
                     value={professional.description}
                     onChangeHandler={onProfessionalUpdate}
                 />
+                <ComponentButtons />
             </form>
         </div>
     );
