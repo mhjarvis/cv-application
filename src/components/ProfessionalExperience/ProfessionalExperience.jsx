@@ -2,12 +2,13 @@
 import "./ProfessionalExperience.css";
 import LabelWithInput from "../LabelWithInput";
 import ComponentButtons from "../ComponentButtons";
+import TextArea from "../TextArea";
 
 export default function ProfessionalExpierence({
     professional,
     onProfessionalUpdate,
     formClasses,
-    clearProfessional
+    clearProfessional,
 }) {
     return (
         <div>
@@ -48,15 +49,14 @@ export default function ProfessionalExpierence({
                     value={professional.location}
                     onChangeHandler={onProfessionalUpdate}
                 />{" "}
-                <LabelWithInput
+                <TextArea
                     id="description"
                     labelTitle="Description"
                     inputType="textarea"
-                    
                     value={professional.description}
                     onChangeHandler={onProfessionalUpdate}
                 />
-                <ComponentButtons clearComponent={clearProfessional}/>
+                <ComponentButtons clearComponent={clearProfessional} />
             </form>
         </div>
     );
