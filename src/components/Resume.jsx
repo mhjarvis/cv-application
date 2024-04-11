@@ -75,6 +75,16 @@ export default function Resume() {
             schoolEndDate: "",
         });
     }
+    function clearPersonal() {
+        setPersonal({
+            fullName: "",
+            email: "",
+            address: "",
+            phoneNumber: "",
+            linkedIn: "",
+            github: "",
+        });
+    }
 
     return (
         <div className="main">
@@ -85,6 +95,7 @@ export default function Resume() {
                         formClasses="personal-information-form"
                         onPersonalUpdate={personalHandler}
                         personal={personal}
+                        clearPersonal={clearPersonal}
                     />
                     <Education
                         formClasses="education-form"

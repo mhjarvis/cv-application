@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 import "./ComponentButtons.css";
 
-export default function ComponentButtons({ clearEducation }) {
+export default function ComponentButtons({ clearComponent }) {
     return (
         <div className="component-buttons-container">
             <button className="component-buttons-save" type="button">
@@ -10,7 +10,7 @@ export default function ComponentButtons({ clearEducation }) {
             <button
                 className="component-buttons-clear"
                 type="button"
-                onClick={clearEducation}
+                onClick={clearComponent}
             >
                 Clear
             </button>

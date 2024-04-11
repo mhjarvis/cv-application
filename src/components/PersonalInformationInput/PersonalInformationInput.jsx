@@ -7,6 +7,7 @@ export default function PersonalInformationInput({
     onPersonalUpdate,
     formClasses,
     personal,
+    clearPersonal,
 }) {
     return (
         <div>
@@ -54,7 +55,7 @@ export default function PersonalInformationInput({
                     value={personal.github}
                     onChangeHandler={onPersonalUpdate}
                 />
-                <ComponentButtons />
+                <ComponentButtons clearComponent={clearPersonal} />
             </form>
         </div>
     );
