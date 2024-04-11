@@ -1,6 +1,9 @@
 /************************* Education *************************/
 
 .education-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     font-size: 2.5rem;
     font-weight: 700;
     margin: 2rem 0 0 0;
@@ -49,3 +52,6 @@
     height: 3rem;
 }
 
+.education-title-hidden {
+    margin-bottom: 2rem;
+}

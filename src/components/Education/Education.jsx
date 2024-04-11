@@ -1,4 +1,6 @@
 /* eslint-disable react/prop-types */
+import { useState } from "react";
+import icon_expand from "../../images/icon_expand.svg";
 import ComponentButtons from "../ComponentButtons";
 import LabelWithInput from "../LabelWithInput";
 import "./Education.css";
@@ -9,10 +11,30 @@ export default function Education({
     formClasses,
     clearEducation,
 }) {
-    return (
+    const [showEducation, setShowEducation] = useState(true);
+
+    function setShowEducationHandler() {
+        setShowEducation(() => {
+            !showEducation;
+        });
+    }
+
+    const expandIcon = (
+        <img src={icon_expand} alt="expand icon" className="expand-icon" />
+    );
+
+    const educationInformation = (
         <div>
             <form action="" className={formClasses}>
-                <h1 className="education-title">Education</h1>
+                <h1 className="education-title">
+                    Education{" "}
+                    <button
+                        className="expand-button"
+                        onClick={setShowEducationHandler}
+                    >
+                        {expandIcon}
+                    </button>
+                </h1>
                 <LabelWithInput
                     id="degree"
                     labelTitle="Degree"
@@ -59,4 +81,19 @@ export default function Education({
             </form>
         </div>
     );
+    const educationInformationHidden = (
+        <form action="" className={formClasses}>
+            <h1 className="education-title education-title-hidden">
+                Education{" "}
+                <button
+                    className="expand-button"
+                    onClick={setShowEducationHandler}
+                >
+                    {expandIcon}
+                </button>
+            </h1>
+        </form>
+    );
+
+    return showEducation ? educationInformation : educationInformationHidden;
 }
