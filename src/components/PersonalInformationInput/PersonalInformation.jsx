@@ -2,6 +2,7 @@
 import "./PersonalInformation.css";
 import LabelWithInput from "../LabelWithInput";
 import ComponentButtons from "../ComponentButtons";
+import { useState } from "react";
 
 export default function PersonalInformationInput({
     onPersonalUpdate,
@@ -9,10 +10,21 @@ export default function PersonalInformationInput({
     personal,
     clearPersonal,
 }) {
-    return (
+    const [showPersonal, setShowPersonal] = useState(true);
+
+    function setShowPersonalHandler() {
+        setShowPersonal(() => {
+            !showPersonal;
+        });
+    }
+
+    const personalInformation = (
         <div>
             <form action="" className={formClasses}>
-                <h1 className="personal-info-title">Personal Information</h1>
+                <h1 className="personal-info-title">
+                    Personal Information{" "}
+                    <button onClick={setShowPersonalHandler}>Arrow</button>
+                </h1>
                 <LabelWithInput
                     id="fullName"
                     labelTitle="FullName"
@@ -59,4 +71,15 @@ export default function PersonalInformationInput({
             </form>
         </div>
     );
+
+    const hidePersonalInformation = (
+        <form action="" className={formClasses}>
+            <h1 className="personal-info-title personal-info-title-hidden">
+                Personal Information{" "}
+                <button onClick={setShowPersonalHandler}>Arrow</button>
+            </h1>
+        </form>
+    );
+
+    return showPersonal ? personalInformation : hidePersonalInformation;
 }

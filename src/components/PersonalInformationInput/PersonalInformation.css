@@ -35,3 +35,7 @@
 .personal-information-form > input:last-child {
     margin-bottom: 2rem;
 }
+
+.personal-info-title-hidden {
+    margin-bottom: 2rem;
+}
