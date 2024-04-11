@@ -7,15 +7,21 @@
 
 .professional-output-section {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
 }
 
 .professional-output-component > h1 {
     font-size: 1.5rem;
-    font-weight: 700;
 }
 
 .professional-output-top {
-    font-weight: 700;
-    font-style: italic;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1rem;
+}
+
+.professional-output-bottom {
+    margin-top: .4rem;
+    
 }
