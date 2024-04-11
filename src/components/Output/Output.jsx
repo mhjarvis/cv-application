@@ -9,22 +9,22 @@ import "./Output.css";
 import EducationOutput from "../Education/EducationOutput";
 import ProfessionalExpierenceOutput from "../ProfessionalExperience/ProfessionalExperienceOutput";
 
-export default function Output({
-    personal,
-    education,
-    professional,
-}) {
+export default function Output({ personal, education, professional }) {
     return (
         <div className="output-container">
             <section>
                 <h1 className="output-fullName">{personal.fullName}</h1>
                 <div className="output-personal-info-secondary">
                     <span>
-                        <img
-                            src={icon_email}
-                            alt="email icon"
-                            className="icon"
-                        />
+                        {personal.email ? (
+                            <img
+                                src={icon_email}
+                                alt="email icon"
+                                className="icon"
+                            />
+                        ) : (
+                            ""
+                        )}
                         {personal.email}
                     </span>
                     <span>
