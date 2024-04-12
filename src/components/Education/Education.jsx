@@ -5,6 +5,7 @@ import icon_expand from "../../images/icon_expand.svg";
 import ComponentButtons from "../ComponentButtons";
 import LabelWithInput from "../LabelWithInput";
 import "./Education.css";
+import SavedElement from "../SavedElements";
 
 export default function Education({
     education,
@@ -25,12 +26,13 @@ export default function Education({
         <img src={icon_expand} alt="expand icon" className="expand-icon" />
     );
 
-    const otherEducationComponents = educationArr.map((v, index) => (
+    /*     const otherEducationComponents = educationArr.map((v, index) => (
         <div key={index}>{v.degree}</div>
-    ));
+    )); */
 
     const educationInformation = (
         <div>
+            {" "}
             <div className={formClasses}>
                 <h1 className="education-title">
                     Education{" "}
@@ -41,7 +43,12 @@ export default function Education({
                         {expandIcon}
                     </button>
                 </h1>
-                {educationArr.length > 0 ? otherEducationComponents : ""}
+                {educationArr.length > 0 ? (
+                    <SavedElement arr={educationArr} />
+                ) : (
+                    ""
+                )}
+                {/* {educationArr.length > 0 ? otherEducationComponents : ""} */}
                 <LabelWithInput
                     id="degree"
                     labelTitle="Degree"
