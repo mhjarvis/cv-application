@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-key */
 /* eslint-disable react/prop-types */
 import { useState } from "react";
 import icon_expand from "../../images/icon_expand.svg";
@@ -9,6 +10,7 @@ export default function Education({
     education,
     onAddToEducationArr,
     onEducationUpdate,
+    educationArr,
     formClasses,
     clearEducation,
 }) {
@@ -23,6 +25,10 @@ export default function Education({
         <img src={icon_expand} alt="expand icon" className="expand-icon" />
     );
 
+    const otherEducationComponents = educationArr.map((v, index) => (
+        <div key={index}>{v.degree}</div>
+    ));
+
     const educationInformation = (
         <div>
             <div className={formClasses}>
@@ -35,8 +41,7 @@ export default function Education({
                         {expandIcon}
                     </button>
                 </h1>
-                {/*                 {educationArr.length > 0 ? console.log(educationArr) : console.log('nothing')}
-                 */}{" "}
+                {educationArr.length > 0 ? otherEducationComponents : ""}
                 <LabelWithInput
                     id="degree"
                     labelTitle="Degree"

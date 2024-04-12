@@ -9,7 +9,7 @@ import ProfessionalExpierence from "./ProfessionalExperience/ProfessionalExperie
 export default function Resume() {
     const [tabSelected, setTabSelected] = useState("content");
     const [education, setEducation] = useState({
-        degree: "",
+        degree: "Psychology",
         school: "University of Alabama",
         schoolCity: "Birmingham",
         schoolState: "Alabama",
@@ -60,9 +60,10 @@ export default function Resume() {
         });
     }
 
-    function addToEducationArray() {
+    function addToEducationArray() {            // Add current education state to arr
         console.log("poop");
-        setEducationArr([]);
+        setEducationArr([...educationArr, education]);
+        clearEducation();
     }
 
     function clearEducation() {
