@@ -8,6 +8,7 @@ export default function SavedElement({ arr }) {
             <div className="saved-element">
                 {arr.map((el, index) => (
                     <p key={index}>{el.degree}</p>
+                    
                 ))}
             </div>
         </div>
