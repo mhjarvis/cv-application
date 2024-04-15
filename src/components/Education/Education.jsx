@@ -26,6 +26,8 @@ export default function Education({
         <img src={icon_expand} alt="expand icon" className="expand-icon" />
     );
 
+
+    
     /*     const otherEducationComponents = educationArr.map((v, index) => (
         <div key={index}>{v.degree}</div>
     )); */
