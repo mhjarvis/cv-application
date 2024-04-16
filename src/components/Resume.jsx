@@ -7,6 +7,7 @@ import Education from "./Education/Education";
 import ProfessionalExpierence from "./ProfessionalExperience/ProfessionalExperience";
 
 export default function Resume() {
+
     const [tabSelected, setTabSelected] = useState("content");
     const [education, setEducation] = useState({
         degree: "Psychology",
@@ -60,10 +61,12 @@ export default function Resume() {
         });
     }
 
-    function addToEducationArray() {            // Add current education state to arr
+    function addToEducationArray() {
+        // Add current education state to arr
         setEducationArr([...educationArr, education]);
         clearEducation();
     }
+
 
     function clearEducation() {
         setEducation({
