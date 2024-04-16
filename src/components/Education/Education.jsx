@@ -11,6 +11,7 @@ export default function Education({
     education,
     onAddToEducationArr,
     onEducationUpdate,
+    deleteEducationElement,
     educationArr,
     formClasses,
     clearEducation,
@@ -26,9 +27,7 @@ export default function Education({
         <img src={icon_expand} alt="expand icon" className="expand-icon" />
     );
 
-    function deleteEducationElement(index) {
-        console.log(index);
-    }
+
 
     /*     const otherEducationComponents = educationArr.map((v, index) => (
         <div key={index}>{v.degree}</div>

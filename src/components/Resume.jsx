@@ -7,7 +7,6 @@ import Education from "./Education/Education";
 import ProfessionalExpierence from "./ProfessionalExperience/ProfessionalExperience";
 
 export default function Resume() {
-
     const [tabSelected, setTabSelected] = useState("content");
     const [education, setEducation] = useState({
         degree: "Psychology",
@@ -67,6 +66,9 @@ export default function Resume() {
         clearEducation();
     }
 
+    function deleteEducationElement(index) {
+        console.log(index);
+    }
 
     function clearEducation() {
         setEducation({
@@ -115,6 +117,7 @@ export default function Resume() {
                         onEducationUpdate={educationHandler}
                         education={education}
                         educationArr={educationArr}
+                        deleteEducationElement={deleteEducationElement}
                         onAddToEducationArr={addToEducationArray}
                         clearEducation={clearEducation}
                     />
