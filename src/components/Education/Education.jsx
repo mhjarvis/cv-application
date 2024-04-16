@@ -15,6 +15,8 @@ export default function Education({
     formClasses,
     clearEducation,
 }) {
+
+    
     /* Education component shows as collapsed on initial render */
     const [showEducation, setShowEducation] = useState(true);
 
@@ -26,6 +28,9 @@ export default function Education({
         <img src={icon_expand} alt="expand icon" className="expand-icon" />
     );
 
+    function deleteEducationElement() {
+        console.log('poop')
+    }
 
 
     /*     const otherEducationComponents = educationArr.map((v, index) => (
@@ -46,7 +51,7 @@ export default function Education({
                     </button>
                 </h1>
                 {educationArr.length > 0 ? (
-                    <SavedElement arr={educationArr} />
+                    <SavedElement arr={educationArr} deleteEducationElement={deleteEducationElement} />
                 ) : (
                     ""
                 )}
