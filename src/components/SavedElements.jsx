@@ -6,9 +6,10 @@ export default function SavedElement({ arr }) {
     return (
         <div className="saved-elements-container">
             <div className="saved-element">
-                {arr.map((el, index) => (
+                {arr.map((el, index) => (<>
                     <p key={index}>{el.degree}</p>
-                    
+                    <button>x</button>
+                    </>
                 ))}
             </div>
         </div>

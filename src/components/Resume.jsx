@@ -61,7 +61,6 @@ export default function Resume() {
     }
 
     function addToEducationArray() {            // Add current education state to arr
-        console.log("poop");
         setEducationArr([...educationArr, education]);
         clearEducation();
     }
