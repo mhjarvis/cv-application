@@ -26,13 +26,7 @@ export default function Education({
         <img src={icon_expand} alt="expand icon" className="expand-icon" />
     );
 
-    const users = {
-        name: "Markus",
-        age: 22,
-    };
 
-    const x = [1, "dog", { afdjiojo: 23332 }, 23233, "foodhead"];
-    console.table(x)
 
     /*     const otherEducationComponents = educationArr.map((v, index) => (
         <div key={index}>{v.degree}</div>
