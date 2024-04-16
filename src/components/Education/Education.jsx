@@ -15,8 +15,6 @@ export default function Education({
     formClasses,
     clearEducation,
 }) {
-
-    
     /* Education component shows as collapsed on initial render */
     const [showEducation, setShowEducation] = useState(true);
 
@@ -28,10 +26,9 @@ export default function Education({
         <img src={icon_expand} alt="expand icon" className="expand-icon" />
     );
 
-    function deleteEducationElement() {
-        console.log('poop')
+    function deleteEducationElement(index) {
+        console.log(index);
     }
-
 
     /*     const otherEducationComponents = educationArr.map((v, index) => (
         <div key={index}>{v.degree}</div>
@@ -51,7 +48,10 @@ export default function Education({
                     </button>
                 </h1>
                 {educationArr.length > 0 ? (
-                    <SavedElement arr={educationArr} deleteEducationElement={deleteEducationElement} />
+                    <SavedElement
+                        arr={educationArr}
+                        deleteEducationElement={deleteEducationElement}
+                    />
                 ) : (
                     ""
                 )}

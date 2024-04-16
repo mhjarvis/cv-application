@@ -7,10 +7,12 @@ export default function SavedElement({ arr, deleteEducationElement }) {
         <div className="saved-elements-container">
             <div className="saved-element">
                 {arr.map((el, index) => (
-                    <>
-                        <p key={index}>{el.degree}</p>
-                        <button key={el + index} onClick={deleteEducationElement}>x</button>
-                    </>
+                    <div key={index}>
+                        <p>{el.degree}</p>
+                        <button onClick={() => deleteEducationElement(index)}>
+                            x
+                        </button>
+                    </div>
                 ))}
             </div>
         </div>
