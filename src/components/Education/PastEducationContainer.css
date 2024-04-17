@@ -37,8 +37,38 @@
     font-style: italic;
 }
 
+.education-buttons-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+}
+
+.education-buttons-container > button:hover {
+    background-color: rgb(236, 236, 236);
+    border-radius: 8px;
+}
+
+.pec-edit-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border: none;
+    width: 3rem;
+    height: 3rem;
+    margin-right: 0.2rem;
+}
+
 .pec-delete-button {
-    margin: 1rem 1rem 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 3rem;
+    height: 3rem;
+    background-color: white;
+    border: none;
+    font-size: 2rem;
 }
 
 /* Past Education Container (2nd line of information) */

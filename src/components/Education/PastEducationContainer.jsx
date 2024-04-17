@@ -1,5 +1,6 @@
 /* eslint-disable react/prop-types */
 import "./PastEducationContainer.css";
+import icon_edit from "../../images/icon-edit.svg";
 
 export default function PastEducationContainer({
     pastEducationArr,
@@ -19,14 +20,21 @@ export default function PastEducationContainer({
                                     , {record.school}
                                 </p>
                             </div>
-                            <button
-                                className="pec-delete-button"
-                                onClick={() =>
-                                    deleteElementFromPastEducationArray(index)
-                                }
-                            >
-                                x
-                            </button>
+                            <div className="education-buttons-container">
+                                <button className="pec-edit-button">
+                                    <img src={icon_edit} alt="edit icon" />
+                                </button>
+                                <button
+                                    className="pec-delete-button"
+                                    onClick={() =>
+                                        deleteElementFromPastEducationArray(
+                                            index
+                                        )
+                                    }
+                                >
+                                    x
+                                </button>
+                            </div>
                         </div>
                     </div>
                     <div className="pec-line-2">
