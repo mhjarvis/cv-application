@@ -33,6 +33,8 @@ export default function Resume() {
         description:
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
     });
+
+    /*     these states handle initial filler content / saved array states */
     const [pastEducationArr, setPastEducationArr] = useState([
         {
             degree: "English",
@@ -51,6 +53,14 @@ export default function Resume() {
             schoolEndDate: "May 2015",
         },
     ]);
+    const [pastPersonal, setPastPersonal] = useState({
+        fullName: "Markus Jarvis",
+        email: "markus.h.jarvis@gmail.com",
+        address: "123 Main Ave SE, Huntsville, AL 36362",
+        phoneNumber: "855.545.3421",
+        linkedIn: "linkedin.com/markusjarvis",
+        github: "github.com/mhjarvis",
+    });
 
     function tabSelectHandler(event) {
         setTabSelected(event.target.value);
@@ -88,10 +98,22 @@ export default function Resume() {
         arr.splice(index, 1);
         setPastEducationArr(arr);
     }
+
     function editElementFromPastEducationArray(index) {
-        console.log(index);
         setEducation({ ...pastEducationArr[index] });
         deleteEducationElement(index);
+    }
+
+    function addToPastPersonal() {
+        console.log("saving yuppers");
+    }
+
+    function deletePastPersonal() {
+        console.log("delete yuppers");
+    }
+
+    function editPastPersonal() {
+        console.log("edititing yuppers");
     }
 
     function clearEducation() {
@@ -135,6 +157,11 @@ export default function Resume() {
                         onPersonalUpdate={personalHandler}
                         personal={personal}
                         clearPersonal={clearPersonal}
+
+                        // Saves the state of information in a container
+                        addToPastPersonal={addToPastPersonal}
+                        deletePastPersonal={deletePastPersonal}
+                        editPastPersonal={editPastPersonal}
                     />
                     <Education
                         formClasses="education-form"
