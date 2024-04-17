@@ -88,6 +88,9 @@ export default function Resume() {
         arr.splice(index, 1);
         setPastEducationArr(arr);
     }
+    function editElementFromPastEducationArray(index) {
+        console.log(index)
+    }
 
     function clearEducation() {
         setEducation({
@@ -137,6 +140,7 @@ export default function Resume() {
                         education={education}
                         pastEducationArr={pastEducationArr}
                         deleteEducationElement={deleteEducationElement}
+                        editElementFromPastEducationArray={editElementFromPastEducationArray}
                         onAddToEducationArr={addToEducationArray}
                         clearEducation={clearEducation}
                     />

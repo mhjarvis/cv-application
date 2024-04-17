@@ -13,6 +13,7 @@ export default function Education({
     onEducationUpdate,
     deleteEducationElement,
     pastEducationArr,
+    editElementFromPastEducationArray,
     formClasses,
     clearEducation,
 }) {
@@ -26,8 +27,6 @@ export default function Education({
     const expandIcon = (
         <img src={icon_expand} alt="expand icon" className="expand-icon" />
     );
-
-
 
     /*     const otherEducationComponents = educationArr.map((v, index) => (
         <div key={index}>{v.degree}</div>
@@ -48,8 +47,11 @@ export default function Education({
                 </h1>
                 {pastEducationArr.length > 0 ? (
                     <PastEducationContainer
-                    pastEducationArr={pastEducationArr}
-                        deleteElementFromPastEducationArray={deleteEducationElement}
+                        pastEducationArr={pastEducationArr}
+                        deleteElementFromPastEducationArray={
+                            deleteEducationElement
+                        }
+                        editElementFromPastEducationArray={editElementFromPastEducationArray}
                     />
                 ) : (
                     ""

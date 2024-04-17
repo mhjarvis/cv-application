@@ -5,6 +5,7 @@ import icon_edit from "../../images/icon-edit.svg";
 export default function PastEducationContainer({
     pastEducationArr,
     deleteElementFromPastEducationArray,
+    editElementFromPastEducationArray
 }) {
     return (
         <div className="pec-container">
@@ -21,7 +22,12 @@ export default function PastEducationContainer({
                                 </p>
                             </div>
                             <div className="education-buttons-container">
-                                <button className="pec-edit-button">
+                                <button
+                                    className="pec-edit-button"
+                                    onClick={() =>
+                                        editElementFromPastEducationArray(index)
+                                    }
+                                >
                                     <img src={icon_edit} alt="edit icon" />
                                 </button>
                                 <button
