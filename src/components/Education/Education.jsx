@@ -5,14 +5,14 @@ import icon_expand from "../../images/icon_expand.svg";
 import ComponentButtons from "../ComponentButtons";
 import LabelWithInput from "../LabelWithInput";
 import "./Education.css";
-import PastEducationContainer from "../PastEducationContainer";
+import PastEducationContainer from "./PastEducationContainer";
 
 export default function Education({
     education,
     onAddToEducationArr,
     onEducationUpdate,
     deleteEducationElement,
-    educationArr,
+    pastEducationArr,
     formClasses,
     clearEducation,
 }) {
@@ -46,9 +46,9 @@ export default function Education({
                         {expandIcon}
                     </button>
                 </h1>
-                {educationArr.length > 0 ? (
+                {pastEducationArr.length > 0 ? (
                     <PastEducationContainer
-                        pastEducationArray={educationArr}
+                    pastEducationArr={pastEducationArr}
                         deleteElementFromPastEducationArray={deleteEducationElement}
                     />
                 ) : (

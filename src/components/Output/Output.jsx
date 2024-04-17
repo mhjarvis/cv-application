@@ -5,11 +5,14 @@ import EducationOutput from "../Education/EducationOutput";
 import ProfessionalExpierenceOutput from "../ProfessionalExperience/ProfessionalExperienceOutput";
 import PersonalInformationOutput from "../PersonalInformationInput/PersonalInformationOutput";
 
-export default function Output({ personal, education, professional }) {
+export default function Output({ personal, education, professional, pastEducationArr }) {
     return (
         <div className="output-container">
             <PersonalInformationOutput personal={personal} />
-            <EducationOutput education={education} />
+            <EducationOutput
+                education={education}
+                pastEducationArr={pastEducationArr}
+            />
             <ProfessionalExpierenceOutput professional={professional} />
         </div>
     );

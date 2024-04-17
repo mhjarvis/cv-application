@@ -1,4 +1,5 @@
 .pec-container {
+    margin-top: 1rem;
     width: 90%;
 }
 
@@ -21,7 +22,6 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-
 }
 
 .pec-line-1-info {
@@ -49,7 +49,8 @@
     padding: 0 0 1rem 1rem;
 }
 
-.pec-line-2-dates, .pec-line-2-location {
+.pec-line-2-dates,
+.pec-line-2-location {
     font-size: 1.2rem;
 }
 

@@ -1,31 +1,19 @@
 /* eslint-disable react/prop-types */
 import "./EducationOutput.css";
 import Seperator from "../Output/Seperator";
+import EducationOutputRecord from "./EducationOutputRecord";
 
-export default function EducationOutput({ education }) {
+export default function EducationOutput({ education, pastEducationArr }) {
     return (
         <div className="education-output-component">
             <h1>Education</h1>
             <Seperator />
-            <div className="education-output-section">
-                <span className="education-output-left">
-                    {/* remove comma if additional information is not present */}
-                    {education.degree}
-                    {education.degree && education.school ? ", " : ""}
-                    {education.school}
-                </span>
-                <span className="education-output-right">
-                    {education.schoolStartDate}
-                    {education.schoolStartDate && education.schoolEndDate
-                        ? "-"
-                        : ""}
-                    {education.schoolEndDate}
-                    {education.schoolCity ? " | " : ""}
-                    {education.schoolCity}
-                    {education.schoolCity && education.schoolState ? ", " : ""}
-                    {education.schoolState}
-                </span>
+            <div className="stored-education-output">
+                {pastEducationArr.map((record, index) => (
+                    <EducationOutputRecord record={record} key={index} />
+                ))}
             </div>
+            <EducationOutputRecord record={education} />
         </div>
     );
 }

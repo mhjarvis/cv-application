@@ -33,7 +33,7 @@ export default function Resume() {
         description:
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
     });
-    const [educationArr, setEducationArr] = useState([
+    const [pastEducationArr, setPastEducationArr] = useState([
         {
             degree: "English",
             school: "University of Washington",
@@ -79,14 +79,14 @@ export default function Resume() {
 
     function addToEducationArray() {
         // Add current education state to arr
-        setEducationArr([...educationArr, education]);
+        setPastEducationArr([...pastEducationArr, education]);
         clearEducation();
     }
 
     function deleteEducationElement(index) {
-        const arr = [...educationArr];
+        const arr = [...pastEducationArr];
         arr.splice(index, 1);
-        setEducationArr(arr);
+        setPastEducationArr(arr);
     }
 
     function clearEducation() {
@@ -135,7 +135,7 @@ export default function Resume() {
                         formClasses="education-form"
                         onEducationUpdate={educationHandler}
                         education={education}
-                        educationArr={educationArr}
+                        pastEducationArr={pastEducationArr}
                         deleteEducationElement={deleteEducationElement}
                         onAddToEducationArr={addToEducationArray}
                         clearEducation={clearEducation}
@@ -151,6 +151,7 @@ export default function Resume() {
             <Output
                 personal={personal}
                 education={education}
+                pastEducationArr={pastEducationArr}
                 professional={professional}
             />
         </div>

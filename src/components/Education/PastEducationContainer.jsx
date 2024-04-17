@@ -1,13 +1,13 @@
 /* eslint-disable react/prop-types */
 import "./PastEducationContainer.css";
 
-export default function SavedElement({
-    pastEducationArray,
+export default function PastEducationContainer({
+    pastEducationArr,
     deleteElementFromPastEducationArray,
 }) {
     return (
         <div className="pec-container">
-            {pastEducationArray.map((record, index) => (
+            {pastEducationArr.map((record, index) => (
                 <div className="pec-container-element" key={index}>
                     <div className="pec-line-1">
                         <div className="pec-line-1-container">
