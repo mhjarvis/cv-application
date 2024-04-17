@@ -1,5 +1,4 @@
 /* eslint-disable react/prop-types */
-
 import "./PastEducationContainer.css";
 
 export default function SavedElement({
@@ -17,7 +16,7 @@ export default function SavedElement({
                                     {record.degree}
                                 </p>
                                 <p className="pec-line-1-school">
-                                    {record.school}
+                                    , {record.school}
                                 </p>
                             </div>
                             <button
@@ -34,6 +33,12 @@ export default function SavedElement({
                         <p className="pec-line-2-dates">
                             {record.schoolStartDate} - {record.schoolEndDate}
                         </p>
+                        {/* add seperator is there is a start or end date */}
+                        {record.schoolStartDate || record.schoolEndDate ? (
+                            <span className="seperator-spacer">|</span>
+                        ) : (
+                            ""
+                        )}
                         <p className="pec-line-2-location">
                             {record.schoolCity}, {record.schoolState}
                         </p>

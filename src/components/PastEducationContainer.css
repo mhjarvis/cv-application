@@ -1,45 +1,58 @@
 .pec-container {
-    
-}
-
-
-
-
-
-
-
-
-
-.saved-elements-container {
     width: 90%;
 }
 
-.saved-element {
+.pec-container-element {
+    width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-}
-
-.saved-element-education-box {
-    display: flex;
-    width: 100%;
-    margin-bottom: 1rem;
     border: 1px solid black;
+    margin-bottom: 1rem;
+    border-radius: 8px;
 }
 
-.saved-element-education-info-holder {
+/* Past Education Container (1st line of each individual element) */
+.pec-line-1 {
+    max-width: 100%;
+}
+
+.pec-line-1-container {
     width: 100%;
     display: flex;
     align-items: center;
+    justify-content: space-between;
+
 }
 
-.saved-element-education-degree {
-    font-weight: 600;
-    margin-left: 0.5rem;
+.pec-line-1-info {
+    display: flex;
+    margin: 0 2rem 0 1rem;
 }
 
-.saved-element-education-school {
+.pec-line-1-degree {
+    font-weight: 700;
+}
+
+.pec-line-1-school {
     font-style: italic;
+}
+
+.pec-delete-button {
+    margin: 1rem 1rem 0 0;
+}
+
+/* Past Education Container (2nd line of information) */
+
+.pec-line-2 {
+    display: flex;
+    align-items: center;
+    padding: 0 0 1rem 1rem;
+}
+
+.pec-line-2-dates, .pec-line-2-location {
+    font-size: 1.2rem;
+}
+
+.seperator-spacer {
+    margin: 0 0.3rem;
 }
