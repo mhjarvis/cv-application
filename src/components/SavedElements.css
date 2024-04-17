@@ -10,13 +10,24 @@
     width: 100%;
 }
 
-.saved-element > p {
+.saved-element-education-box {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: rgb(228, 228, 228);
-    margin-top: 1rem;
     width: 100%;
-    height: 3rem;
+    margin-bottom: 1rem;
+    border: 1px solid black;
 }
 
+.saved-element-education-info-holder {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.saved-element-education-degree {
+    font-weight: 600;
+    margin-left: 0.5rem;
+}
+
+.saved-element-education-school {
+    font-style: italic;
+}
