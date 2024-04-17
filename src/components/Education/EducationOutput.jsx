@@ -13,7 +13,7 @@ export default function EducationOutput({ education, pastEducationArr }) {
                     <EducationOutputRecord record={record} key={index} />
                 ))}
             </div>
-            <EducationOutputRecord record={education} />
+            <EducationOutputRecord addClass={'stored-education-output-active'} record={education} />
         </div>
     );
 }
