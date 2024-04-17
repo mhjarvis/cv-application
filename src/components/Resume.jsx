@@ -67,7 +67,9 @@ export default function Resume() {
     }
 
     function deleteEducationElement(index) {
-        console.log(index);
+        const arr = [...educationArr];
+        arr.splice(index, 1);
+        setEducationArr(arr);
     }
 
     function clearEducation() {
