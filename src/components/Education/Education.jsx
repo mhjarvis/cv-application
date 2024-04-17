@@ -5,7 +5,7 @@ import icon_expand from "../../images/icon_expand.svg";
 import ComponentButtons from "../ComponentButtons";
 import LabelWithInput from "../LabelWithInput";
 import "./Education.css";
-import SavedElement from "../SavedElements";
+import PastEducationContainer from "../PastEducationContainer";
 
 export default function Education({
     education,
@@ -47,9 +47,9 @@ export default function Education({
                     </button>
                 </h1>
                 {educationArr.length > 0 ? (
-                    <SavedElement
-                        arr={educationArr}
-                        deleteEducationElement={deleteEducationElement}
+                    <PastEducationContainer
+                        pastEducationArray={educationArr}
+                        deleteElementFromPastEducationArray={deleteEducationElement}
                     />
                 ) : (
                     ""
