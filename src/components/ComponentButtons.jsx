@@ -3,14 +3,14 @@ import "./ComponentButtons.css";
 
 export default function ComponentButtons({
     clearComponent,
-    onAddToEducationArr,
+    onClickSave,
 }) {
     return (
         <div className="component-buttons-container">
             <button
                 className="component-buttons-save"
                 type="button"
-                onClick={onAddToEducationArr}
+                onClick={onClickSave}
             >
                 Save
             </button>

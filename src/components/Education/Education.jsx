@@ -102,7 +102,7 @@ export default function Education({
                 />{" "}
                 <ComponentButtons
                     clearComponent={clearEducation}
-                    onAddToEducationArr={onAddToEducationArr}
+                    onClickSave={onAddToEducationArr}
                 />
             </div>
         </div>

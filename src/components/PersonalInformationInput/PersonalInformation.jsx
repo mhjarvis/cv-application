@@ -91,7 +91,7 @@ export default function PersonalInformationInput({
                 />
                 <ComponentButtons
                     clearComponent={clearPersonal}
-                    onAddToEducationArr={addToPastPersonal}
+                    onClickSave={addToPastPersonal}
                 />
             </div>
         </div>
