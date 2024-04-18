@@ -113,6 +113,10 @@ export default function Resume() {
     }
     function addToPastPersonal() {
         console.log("saving yuppers");
+        setPastPersonal({
+            ...personal,
+        });
+        clearPersonal();
     }
     function deletePastPersonal() {
         setPastPersonal({
