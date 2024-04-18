@@ -1,9 +1,9 @@
-.pec-container {
+.ppe-container {
     margin-top: 1rem;
     width: 90%;
 }
 
-.pec-container-element {
+.ppe-container-element {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -13,43 +13,43 @@
 }
 
 /* Past Education Container (1st line of each individual element) */
-.pec-line-1 {
+.ppe-line-1 {
     max-width: 100%;
 }
 
-.pec-line-1-container {
+.ppe-line-1-container {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.pec-line-1-info {
+.ppe-line-1-info {
     display: flex;
     margin: 0 2rem 0 1rem;
 }
 
-.pec-line-1-degree {
+.ppe-line-1-degree {
     font-weight: 700;
 }
 
-.pec-line-1-school {
+.ppe-line-1-school {
     font-style: italic;
 }
 
-.education-buttons-container {
+.professional-buttons-container {
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 0.5rem;
 }
 
-.education-buttons-container > button:hover {
+.professional-buttons-container > button:hover {
     background-color: rgb(236, 236, 236);
     border-radius: 8px;
 }
 
-.pec-edit-button {
+.ppe-edit-button {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -60,7 +60,7 @@
     margin-right: 0.2rem;
 }
 
-.pec-delete-button {
+.ppe-delete-button {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -73,14 +73,14 @@
 
 /* Past Education Container (2nd line of information) */
 
-.pec-line-2 {
+.ppe-line-2 {
     display: flex;
     align-items: center;
     padding: 0 0 1rem 1rem;
 }
 
-.pec-line-2-dates,
-.pec-line-2-location {
+.ppe-line-2-dates,
+.ppe-line-2-location {
     font-size: 1.2rem;
 }
 
