@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 /* eslint-disable react/prop-types */
 import { useState } from "react";
 import icon_expand from "../../images/icon_expand.svg";
@@ -11,6 +12,10 @@ export default function ProfessionalExpierence({
     onProfessionalUpdate,
     formClasses,
     clearProfessional,
+
+    addProfessionalExperience,
+    editProfessionalExperience,
+    deleteProfessionalExperience,
 }) {
     const [showProfessional, setShowProfessional] = useState(false);
 
@@ -22,9 +27,8 @@ export default function ProfessionalExpierence({
         <img src={icon_expand} alt="expand icon" className="expand-icon" />
     );
 
-
     function some(e) {
-        e.preventDefault()
+        e.preventDefault();
     }
 
     const professionalInformation = (
@@ -100,5 +104,7 @@ export default function ProfessionalExpierence({
         </div>
     );
 
-    return showProfessional ? professionalInformation : professionalInformationHidden
+    return showProfessional
+        ? professionalInformation
+        : professionalInformationHidden;
 }

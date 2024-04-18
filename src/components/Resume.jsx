@@ -228,6 +228,11 @@ export default function Resume() {
                         onProfessionalUpdate={professionalHandler}
                         professional={professional}
                         clearProfessional={clearProfessional}
+                        addProfessionalExperience={addProfessionalExperience}
+                        editProfessionalExperience={editProfessionalExperience}
+                        deleteProfessionalExperience={
+                            deleteProfessionalExperience
+                        }
                     />
                 </section>
             </div>
