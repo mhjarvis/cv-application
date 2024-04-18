@@ -1,3 +1,5 @@
+/* eslint-disable no-unused-vars */
+
 import "./Resume.css";
 import ButtonPanel from "./ButtonPanel/ButtonPanel";
 import Output from "./Output/Output";
@@ -157,8 +159,8 @@ export default function Resume() {
                         onPersonalUpdate={personalHandler}
                         personal={personal}
                         clearPersonal={clearPersonal}
-
                         // Saves the state of information in a container
+                        pastPersonal={pastPersonal}
                         addToPastPersonal={addToPastPersonal}
                         deletePastPersonal={deletePastPersonal}
                         editPastPersonal={editPastPersonal}

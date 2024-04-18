@@ -34,7 +34,6 @@ export default function Education({
 
     const educationInformation = (
         <div>
-            {" "}
             <div className={formClasses}>
                 <h1 className="education-title">
                     Education{" "}

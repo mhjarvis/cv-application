@@ -2,6 +2,7 @@
 import "./PersonalInformation.css";
 import LabelWithInput from "../LabelWithInput";
 import ComponentButtons from "../ComponentButtons";
+import PastPersonalContainer from "./PastPersonalContainer";
 import icon_expand from "../../images/icon_expand.svg";
 import { useState } from "react";
 
@@ -10,6 +11,10 @@ export default function PersonalInformationInput({
     formClasses,
     personal,
     clearPersonal,
+    pastPersonal,
+    addToPastPersonal,
+    deletePastPersonal,
+    editPastPersonal,
 }) {
     const [showPersonal, setShowPersonal] = useState(true);
 
@@ -33,6 +38,16 @@ export default function PersonalInformationInput({
                         {expandIcon}
                     </button>
                 </h1>
+                {pastPersonal.length > 0 ? (
+                    <PastPersonalContainer
+                        pastPersonal={pastPersonal}
+                        addToPastPersonal={addToPastPersonal}
+                        deletePastPersonal={deletePastPersonal}
+                        editPastPersonal={editPastPersonal}
+                    />
+                ) : (
+                    ""
+                )}
                 <LabelWithInput
                     id="fullName"
                     labelTitle="FullName"
