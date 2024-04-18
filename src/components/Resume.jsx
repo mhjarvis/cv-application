@@ -228,6 +228,7 @@ export default function Resume() {
                         onProfessionalUpdate={professionalHandler}
                         professional={professional}
                         clearProfessional={clearProfessional}
+                        pastProfessional={pastProfessional}
                         addProfessionalExperience={addProfessionalExperience}
                         editProfessionalExperience={editProfessionalExperience}
                         deleteProfessionalExperience={

@@ -18,7 +18,7 @@ export default function Education({
     clearEducation,
 }) {
     /* Education component shows as collapsed on initial render */
-    const [showEducation, setShowEducation] = useState(true);
+    const [showEducation, setShowEducation] = useState(false);
 
     function setShowEducationHandler() {
         setShowEducation((lastVal) => !lastVal);

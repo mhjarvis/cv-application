@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unknown-property */
 /* eslint-disable no-unused-vars */
 /* eslint-disable react/prop-types */
 import { useState } from "react";
@@ -6,18 +7,19 @@ import "./ProfessionalExperience.css";
 import LabelWithInput from "../LabelWithInput";
 import ComponentButtons from "../ComponentButtons";
 import TextArea from "../TextArea";
+import PastProfessionalExperience from "./PastProfessionalExperience";
 
 export default function ProfessionalExpierence({
     professional,
     onProfessionalUpdate,
     formClasses,
     clearProfessional,
-
+    pastProfessional,
     addProfessionalExperience,
     editProfessionalExperience,
     deleteProfessionalExperience,
 }) {
-    const [showProfessional, setShowProfessional] = useState(false);
+    const [showProfessional, setShowProfessional] = useState(true);
 
     function setShowProfessionalHandler() {
         setShowProfessional((lastVal) => !lastVal);
@@ -43,6 +45,17 @@ export default function ProfessionalExpierence({
                         {expandIcon}
                     </button>
                 </h1>
+                {pastProfessional.length > 0 ? (
+                    <PastProfessionalExperience
+                        pastProfessional={pastProfessional}
+                        deleteProfessionalExperience={
+                            deleteProfessionalExperience
+                        }
+                        editProfessionalExperience={editProfessionalExperience}
+                    />
+                ) : (
+                    ""
+                )}
                 <LabelWithInput
                     id="employer"
                     labelTitle="Employer"
