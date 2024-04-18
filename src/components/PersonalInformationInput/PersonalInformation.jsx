@@ -41,7 +41,6 @@ export default function PersonalInformationInput({
                 {pastPersonal.length > 0 ? (
                     <PastPersonalContainer
                         pastPersonal={pastPersonal}
-                        addToPastPersonal={addToPastPersonal}
                         deletePastPersonal={deletePastPersonal}
                         editPastPersonal={editPastPersonal}
                     />
@@ -90,7 +89,10 @@ export default function PersonalInformationInput({
                     value={personal.github}
                     onChangeHandler={onPersonalUpdate}
                 />
-                <ComponentButtons clearComponent={clearPersonal} />
+                <ComponentButtons
+                    clearComponent={clearPersonal}
+                    onAddToEducationArr={addToPastPersonal}
+                />
             </div>
         </div>
     );
