@@ -46,6 +46,14 @@ export default function Resume() {
     /**
      * Stored content (filler / saved information by user)
      */
+    const [pastPersonal, setPastPersonal] = useState({
+        fullName: "Peter Williamson",
+        email: "petersawesomeemail@gmail.com",
+        address: "123 Main Ave SE, Madison, AL 34872",
+        phoneNumber: "855.545.3421",
+        linkedIn: "linkedin.com/petertheprogrammer",
+        github: "github.com/mhjarvis",
+    });
     const [pastEducationArr, setPastEducationArr] = useState([
         {
             degree: "Life Sciences, B.S.",
@@ -64,14 +72,26 @@ export default function Resume() {
             schoolEndDate: "May 2019",
         },
     ]);
-    const [pastPersonal, setPastPersonal] = useState({
-        fullName: "Peter Williamson",
-        email: "petersawesomeemail@gmail.com",
-        address: "123 Main Ave SE, Madison, AL 34872",
-        phoneNumber: "855.545.3421",
-        linkedIn: "linkedin.com/petertheprogrammer",
-        github: "github.com/mhjarvis",
-    });
+    const [pastProfessional, setPastProfessional] = useState([
+        {
+            employer: "U.S. Army",
+            jobTitle: "Soldier",
+            employmentStartDate: "January 2014",
+            employmentEndDate: "January 2020",
+            location: "Ft. Benning, GA",
+            description:
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        },
+        {
+            employer: "U.S. Army",
+            jobTitle: "Soldier",
+            employmentStartDate: "January 2014",
+            employmentEndDate: "January 2020",
+            location: "Ft. Benning, GA",
+            description:
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        },
+    ]);
     /**
      * Input update functions
      */
@@ -131,6 +151,15 @@ export default function Resume() {
             ...pastPersonal,
         });
         deletePastPersonal();
+    }
+    function addProfessionalExperience() {
+        console.log("Adding to professional experience");
+    }
+    function editProfessionalExperience(index) {
+        console.log("Editing professional experience");
+    }
+    function deleteProfessionalExperience(index) {
+        console.log("Deleting professional experience");
     }
     /*
      * Functions to clear input fields / reset fields
