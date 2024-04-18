@@ -1,5 +1,4 @@
 /* eslint-disable no-unused-vars */
-
 import "./Resume.css";
 import ButtonPanel from "./ButtonPanel/ButtonPanel";
 import Output from "./Output/Output";
@@ -28,12 +27,12 @@ export default function Resume() {
         schoolEndDate: "",
     });
     const [personal, setPersonal] = useState({
-        fullName: "Peter Williamson",
-        email: "petersawesomeemail@gmail.com",
-        address: "123 Main Ave SE, Madison, AL 34872",
-        phoneNumber: "855.545.3421",
-        linkedIn: "linkedin.com/petertheprogrammer",
-        github: "github.com/mhjarvis",
+        fullName: "",
+        email: "",
+        address: "",
+        phoneNumber: "",
+        linkedIn: "",
+        github: "",
     });
     const [professional, setProfessional] = useState({
         employer: "U.S. Army",
@@ -112,7 +111,6 @@ export default function Resume() {
         deleteEducationElement(index);
     }
     function addToPastPersonal() {
-        console.log("saving yuppers");
         setPastPersonal({
             ...personal,
         });
@@ -129,7 +127,10 @@ export default function Resume() {
         });
     }
     function editPastPersonal() {
-        console.log("edititing yuppers");
+        setPersonal({
+            ...pastPersonal,
+        });
+        deletePastPersonal();
     }
     /*
      * Functions to clear input fields / reset fields
