@@ -115,7 +115,14 @@ export default function Resume() {
         console.log("saving yuppers");
     }
     function deletePastPersonal() {
-        console.log("delete yuppers");
+        setPastPersonal({
+            fullName: "",
+            email: "",
+            address: "",
+            phoneNumber: "",
+            linkedIn: "",
+            github: "",
+        });
     }
     function editPastPersonal() {
         console.log("edititing yuppers");

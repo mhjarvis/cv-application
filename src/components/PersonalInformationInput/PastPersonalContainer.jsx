@@ -23,13 +23,13 @@ export default function PastPersonalContainer({
                             <div className="personal-buttons-container">
                                 <button
                                     className="ppc-edit-button"
-                                    onClick={() => editPastPersonal}
+                                    onClick={editPastPersonal}
                                 >
                                     <img src={icon_edit} alt="edit icon" />
                                 </button>
                                 <button
                                     className="ppc-delete-button"
-                                    onClick={() => deletePastPersonal}
+                                    onClick={deletePastPersonal}
                                 >
                                     x
                                 </button>
