@@ -204,6 +204,7 @@ export default function Resume() {
             </div>
             <Output
                 personal={personal}
+                pastPersonal={pastPersonal}
                 education={education}
                 pastEducationArr={pastEducationArr}
                 professional={professional}
