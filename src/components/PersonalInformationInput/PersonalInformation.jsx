@@ -38,61 +38,63 @@ export default function PersonalInformationInput({
                         {expandIcon}
                     </button>
                 </div>
-                {pastPersonal.length > 0 ? (
+                {/* THIS WILL DESPLAY AS LONG AS THE FULLNAME VARIABLE IS TRUE */}
+                {pastPersonal.fullName ? (
                     <PastPersonalContainer
                         pastPersonal={pastPersonal}
                         deletePastPersonal={deletePastPersonal}
                         editPastPersonal={editPastPersonal}
                     />
                 ) : (
-                    ""
+                    <>
+                        <LabelWithInput
+                            id="fullName"
+                            labelTitle="FullName"
+                            inputType="text"
+                            value={personal.fullName}
+                            onChangeHandler={onPersonalUpdate}
+                        />
+                        <LabelWithInput
+                            id="email"
+                            labelTitle="Email"
+                            inputType="text"
+                            value={personal.email}
+                            onChangeHandler={onPersonalUpdate}
+                        />
+                        <LabelWithInput
+                            id="phoneNumber"
+                            labelTitle="Phone Number"
+                            inputType="text"
+                            value={personal.phoneNumber}
+                            onChangeHandler={onPersonalUpdate}
+                        />{" "}
+                        <LabelWithInput
+                            id="address"
+                            labelTitle="Address"
+                            inputType="text"
+                            value={personal.address}
+                            onChangeHandler={onPersonalUpdate}
+                        />
+                        <LabelWithInput
+                            id="linkedIn"
+                            labelTitle="linkedIn"
+                            inputType="text"
+                            value={personal.linkedIn}
+                            onChangeHandler={onPersonalUpdate}
+                        />{" "}
+                        <LabelWithInput
+                            id="github"
+                            labelTitle="GitHub"
+                            inputType="text"
+                            value={personal.github}
+                            onChangeHandler={onPersonalUpdate}
+                        />
+                        <ComponentButtons
+                            clearComponent={clearPersonal}
+                            onClickSave={addToPastPersonal}
+                        />
+                    </>
                 )}
-                <LabelWithInput
-                    id="fullName"
-                    labelTitle="FullName"
-                    inputType="text"
-                    value={personal.fullName}
-                    onChangeHandler={onPersonalUpdate}
-                />
-                <LabelWithInput
-                    id="email"
-                    labelTitle="Email"
-                    inputType="text"
-                    value={personal.email}
-                    onChangeHandler={onPersonalUpdate}
-                />
-                <LabelWithInput
-                    id="phoneNumber"
-                    labelTitle="Phone Number"
-                    inputType="text"
-                    value={personal.phoneNumber}
-                    onChangeHandler={onPersonalUpdate}
-                />{" "}
-                <LabelWithInput
-                    id="address"
-                    labelTitle="Address"
-                    inputType="text"
-                    value={personal.address}
-                    onChangeHandler={onPersonalUpdate}
-                />
-                <LabelWithInput
-                    id="linkedIn"
-                    labelTitle="linkedIn"
-                    inputType="text"
-                    value={personal.linkedIn}
-                    onChangeHandler={onPersonalUpdate}
-                />{" "}
-                <LabelWithInput
-                    id="github"
-                    labelTitle="GitHub"
-                    inputType="text"
-                    value={personal.github}
-                    onChangeHandler={onPersonalUpdate}
-                />
-                <ComponentButtons
-                    clearComponent={clearPersonal}
-                    onClickSave={addToPastPersonal}
-                />
             </div>
         </div>
     );

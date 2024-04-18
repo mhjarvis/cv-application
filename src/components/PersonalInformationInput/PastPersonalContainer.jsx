@@ -9,41 +9,38 @@ export default function PastPersonalContainer({
     deletePastPersonal,
     editPastPersonal,
 }) {
-    return (
-        <div className="ppc-container">
-            <div className="ppc-container-element">
-                <div className="ppc-line-1">
-                    <div className="ppc-line-1-container">
-                        <div className="ppc-line-1-info">
-                            <p className="ppc-line-1-degree">{}</p>
-                        </div>
-                        <div className="personal-buttons-container">
-                            <button
-                                className="ppc-edit-button"
-                                onClick={() => editPastPersonal}
-                            >
-                                <img src={icon_edit} alt="edit icon" />
-                            </button>
-                            <button
-                                className="ppc-delete-button"
-                                onClick={() => deletePastPersonal}
-                            >
-                                x
-                            </button>
+    if (pastPersonal.fullName) {
+        return (
+            <div className="ppc-container">
+                <div className="ppc-container-element">
+                    <div className="ppc-line-1">
+                        <div className="ppc-line-1-container">
+                            <div className="ppc-line-1-info">
+                                <p className="ppc-line-1-degree">
+                                    {pastPersonal.fullName}
+                                </p>
+                            </div>
+                            <div className="personal-buttons-container">
+                                <button
+                                    className="ppc-edit-button"
+                                    onClick={() => editPastPersonal}
+                                >
+                                    <img src={icon_edit} alt="edit icon" />
+                                </button>
+                                <button
+                                    className="ppc-delete-button"
+                                    onClick={() => deletePastPersonal}
+                                >
+                                    x
+                                </button>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div className="ppc-line-2">
-                    <p className="ppc-line-2-dates">
-                        {} - {}
-                    </p>
-                    {/* add seperator is there is a start or end date */}
-                    {}
-                    <p className="ppc-line-2-location">
-                        {}, {}
-                    </p>
+                    <div className="ppc-line-2">{pastPersonal.email}</div>
                 </div>
             </div>
-        </div>
-    );
+        );
+    } else {
+        return "";
+    }
 }
