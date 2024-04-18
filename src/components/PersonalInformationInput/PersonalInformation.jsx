@@ -29,15 +29,15 @@ export default function PersonalInformationInput({
     const personalInformation = (
         <div>
             <div action="" className={formClasses}>
-                <h1 className="personal-info-title">
-                    Personal Information{" "}
+                <div className="personal-info-title">
+                    <h1>Personal Information</h1>
                     <button
                         className="expand-button"
                         onClick={setShowPersonalHandler}
                     >
                         {expandIcon}
                     </button>
-                </h1>
+                </div>
                 {pastPersonal.length > 0 ? (
                     <PastPersonalContainer
                         pastPersonal={pastPersonal}

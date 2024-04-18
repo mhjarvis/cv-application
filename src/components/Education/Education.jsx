@@ -35,22 +35,24 @@ export default function Education({
     const educationInformation = (
         <div>
             <div className={formClasses}>
-                <h1 className="education-title">
-                    Education{" "}
+                <div className="education-title">
+                    <h1>Education</h1>
                     <button
                         className="expand-button"
                         onClick={setShowEducationHandler}
                     >
                         {expandIcon}
                     </button>
-                </h1>
+                </div>
                 {pastEducationArr.length > 0 ? (
                     <PastEducationContainer
                         pastEducationArr={pastEducationArr}
                         deleteElementFromPastEducationArray={
                             deleteEducationElement
                         }
-                        editElementFromPastEducationArray={editElementFromPastEducationArray}
+                        editElementFromPastEducationArray={
+                            editElementFromPastEducationArray
+                        }
                     />
                 ) : (
                     ""
