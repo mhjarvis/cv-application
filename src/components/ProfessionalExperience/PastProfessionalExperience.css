@@ -1,0 +1,89 @@
+.pec-container {
+    margin-top: 1rem;
+    width: 90%;
+}
+
+.pec-container-element {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+}
+
+/* Past Education Container (1st line of each individual element) */
+.pec-line-1 {
+    max-width: 100%;
+}
+
+.pec-line-1-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.pec-line-1-info {
+    display: flex;
+    margin: 0 2rem 0 1rem;
+}
+
+.pec-line-1-degree {
+    font-weight: 700;
+}
+
+.pec-line-1-school {
+    font-style: italic;
+}
+
+.education-buttons-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+}
+
+.education-buttons-container > button:hover {
+    background-color: rgb(236, 236, 236);
+    border-radius: 8px;
+}
+
+.pec-edit-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border: none;
+    width: 3rem;
+    height: 3rem;
+    margin-right: 0.2rem;
+}
+
+.pec-delete-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 3rem;
+    height: 3rem;
+    background-color: white;
+    border: none;
+    font-size: 2rem;
+}
+
+/* Past Education Container (2nd line of information) */
+
+.pec-line-2 {
+    display: flex;
+    align-items: center;
+    padding: 0 0 1rem 1rem;
+}
+
+.pec-line-2-dates,
+.pec-line-2-location {
+    font-size: 1.2rem;
+}
+
+.seperator-spacer {
+    margin: 0 0.3rem;
+}
