@@ -18,9 +18,9 @@ export default function PastProfessionalExperience({
                                 <div className="ppe-line-1-info">
                                     <p className="ppe-line-1-degree">
                                         {record.employer} ,{" "}
-                                        <p className="ppe-italic">
+                                        <span className="ppe-italic">
                                             {record.jobTitle}
-                                        </p>
+                                        </span>
                                     </p>
                                 </div>
                                 <div className="personal-buttons-container">
@@ -39,7 +39,7 @@ export default function PastProfessionalExperience({
                                 </div>
                             </div>
                         </div>
-                        <div className="ppc-line-2">{record.jobTitle}</div>
+                        <div className="ppc-line-2">{record.employmentStartDate} - {record.employmentEndDate}</div>
                     </div>
                 ))}
             </div>
