@@ -1,7 +1,8 @@
 /* eslint-disable react/prop-types */
 import "./ProfessionalExperienceOutput.css";
 import Seperator from "../Output/Seperator";
-export default function ProfessionalExpierenceOutput({ professional }) {
+export default function ProfessionalExpierenceOutput({ professional, pastProfessional }) {
+
     return (
         <div className="professional-output-component">
             <h1 className="bold">Professional Experience</h1>

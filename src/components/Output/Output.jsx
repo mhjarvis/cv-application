@@ -11,6 +11,7 @@ export default function Output({
     education,
     professional,
     pastEducationArr,
+    pastProfessional,
 }) {
     return (
         <div className="output-container">
@@ -22,7 +23,10 @@ export default function Output({
                 education={education}
                 pastEducationArr={pastEducationArr}
             />
-            <ProfessionalExpierenceOutput professional={professional} />
+            <ProfessionalExpierenceOutput
+                professional={professional}
+                pastProfessional={pastProfessional}
+            />
         </div>
     );
 }

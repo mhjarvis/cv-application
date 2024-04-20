@@ -243,6 +243,7 @@ export default function Resume() {
                 education={education}
                 pastEducationArr={pastEducationArr}
                 professional={professional}
+                pastProfessional={pastProfessional}
             />
         </div>
     );
