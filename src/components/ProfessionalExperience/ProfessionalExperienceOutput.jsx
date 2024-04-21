@@ -1,16 +1,32 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable react/prop-types */
 import "./ProfessionalExperienceOutput.css";
+import "./PastProfessionalExperienceRecord";
 import Seperator from "../Output/Seperator";
+import PastProfessionalExperienceRecord from "./PastProfessionalExperienceRecord";
 export default function ProfessionalExpierenceOutput({
     professional,
     pastProfessional,
 }) {
-    return <div></div>
+    return (
+        <div className="education-output-component">
+            <h1>Professional Experience</h1>
+            <Seperator />
+            <div className="stored-education-output">
+                {pastProfessional.map((record, index) => (
+                    <PastProfessionalExperienceRecord
+                        record={record}
+                        key={index}
+                    />
+                ))}
+            </div>
+            <PastProfessionalExperienceRecord
+                addClass={"stored-education-output-active"}
+                record={professional}
+            />
+        </div>
+    );
 }
-
-
-
 
 /* {
     const liveOutput = (
