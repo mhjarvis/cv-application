@@ -13,10 +13,16 @@ export default function PastProfessionalExperienceRecord({
 
     return (
         <div className={classes}>
-            <span className="education-output-left">
-                {/* remove comma if additional information is not present */}
-                {record.employer}
-            </span>
+            <div className="education-output-left">
+                <span>
+                    {/* remove comma if additional information is not present */}
+                    {record.employer}{" "}
+                    {record.jobTitle ? `, ${record.jobTitle}` : ""}
+                </span>
+                <span>
+                    {record.employmentStartDate}
+                </span>
+            </div>
             <span className="education-output-right">{record.description}</span>
         </div>
     );
