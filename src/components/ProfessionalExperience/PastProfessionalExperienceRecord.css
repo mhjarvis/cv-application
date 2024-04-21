@@ -3,11 +3,20 @@
     flex-direction: column;
 }
 
+.pper-output-section:not(:first-child) {
+    margin-top: 0.5rem;
+}
+
+.pper-output-section:first-child {
+    margin-top: 0.6rem;
+}
+
 .pper-output-line-1 {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 0.2rem;
 }
 
 .pper-left {

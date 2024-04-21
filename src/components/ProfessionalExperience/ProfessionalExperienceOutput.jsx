@@ -9,7 +9,7 @@ export default function ProfessionalExpierenceOutput({
     pastProfessional,
 }) {
     return (
-        <div className="education-output-component">
+        <div className="education-output-component professional-output-component">
             <h1>Professional Experience</h1>
             <Seperator />
             <div className="stored-education-output">
