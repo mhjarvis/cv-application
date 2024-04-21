@@ -1,29 +1,30 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable react/prop-types */
+import './PastProfessionalExperienceRecord.css'
 
 export default function PastProfessionalExperienceRecord({
     record,
     addClass = "",
 }) {
-    let classes = "education-output-section";
+    let classes = "pper-output-section";
 
     if (addClass && record.degree !== "") {
-        classes += " stored-education-output-active";
+        classes += "";
     }
 
     return (
         <div className={classes}>
-            <div className="education-output-left">
-                <span>
+            <div className="pper-output-line-1">
+                <span className="pper-left">
                     {/* remove comma if additional information is not present */}
                     {record.employer}{" "}
                     {record.jobTitle ? `, ${record.jobTitle}` : ""}
                 </span>
-                <span>
-                    {record.employmentStartDate}
+                <span className="pper-right">
+                    {record.employmentStartDate} - {record.employmentEndDate}
                 </span>
             </div>
-            <span className="education-output-right">{record.description}</span>
+            <span className="pper-output-line-2">{record.description}</span>
         </div>
     );
 }
