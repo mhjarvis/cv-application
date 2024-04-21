@@ -12,6 +12,9 @@ export default function PastProfessionalExperienceRecord({
         classes += "";
     }
 
+    {
+        /* Need to fix class system here for when button clears 'active data' */
+    }
     return (
         <div className={classes}>
             <div className="pper-output-line-1">
