@@ -1,9 +1,19 @@
+/* eslint-disable no-unused-vars */
 /* eslint-disable react/prop-types */
 import "./ProfessionalExperienceOutput.css";
 import Seperator from "../Output/Seperator";
-export default function ProfessionalExpierenceOutput({ professional, pastProfessional }) {
+export default function ProfessionalExpierenceOutput({
+    professional,
+    pastProfessional,
+}) {
+    return <div></div>
+}
 
-    return (
+
+
+
+/* {
+    const liveOutput = (
         <div className="professional-output-component">
             <h1 className="bold">Professional Experience</h1>
             <Seperator />
@@ -25,4 +35,19 @@ export default function ProfessionalExpierenceOutput({ professional, pastProfess
             </div>
         </div>
     );
-}
+
+    let savedOutput = pastProfessional.map((el, index) => {
+        <>
+            <div key={index}>{el.jobTitle}</div>;
+        </>;
+    });
+
+    if (pastProfessional.length > 0) {
+        return (
+            <>
+                <div>{savedOutput}</div>
+                <div>{liveOutput}</div>
+            </>
+        );
+    }
+} */
