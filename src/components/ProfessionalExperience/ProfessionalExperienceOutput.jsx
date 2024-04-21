@@ -12,6 +12,10 @@ export default function ProfessionalExpierenceOutput({
         <div className="education-output-component professional-output-component">
             <h1>Professional Experience</h1>
             <Seperator />
+            <PastProfessionalExperienceRecord
+                addClass={"stored-education-output-active"}
+                record={professional}
+            />
             <div className="stored-education-output">
                 {pastProfessional.map((record, index) => (
                     <PastProfessionalExperienceRecord
@@ -20,10 +24,6 @@ export default function ProfessionalExpierenceOutput({
                     />
                 ))}
             </div>
-            <PastProfessionalExperienceRecord
-                addClass={"stored-education-output-active"}
-                record={professional}
-            />
         </div>
     );
 }
