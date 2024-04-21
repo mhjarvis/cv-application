@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable react/prop-types */
-import './PastProfessionalExperienceRecord.css'
+import "./PastProfessionalExperienceRecord.css";
 
 export default function PastProfessionalExperienceRecord({
     record,
@@ -15,14 +15,17 @@ export default function PastProfessionalExperienceRecord({
     return (
         <div className={classes}>
             <div className="pper-output-line-1">
-                <span className="pper-left">
+                <div className="pper-left">
                     {/* remove comma if additional information is not present */}
-                    {record.employer}{" "}
-                    {record.jobTitle ? `, ${record.jobTitle}` : ""}
-                </span>
-                <span className="pper-right">
+                    <span className="pper-left-1"> {record.employer} </span>
+                    <span className="pper-left-2">
+                        {" "}
+                        {record.jobTitle ? `, ${record.jobTitle}` : ""}
+                    </span>
+                </div>
+                <div className="pper-right">
                     {record.employmentStartDate} - {record.employmentEndDate}
-                </span>
+                </div>
             </div>
             <span className="pper-output-line-2">{record.description}</span>
         </div>
