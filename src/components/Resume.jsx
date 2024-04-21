@@ -35,13 +35,13 @@ export default function Resume() {
         github: "",
     });
     const [professional, setProfessional] = useState({
-        employer: "U.S. Army",
-        jobTitle: "Soldier",
-        employmentStartDate: "January 2014",
-        employmentEndDate: "January 2020",
-        location: "Ft. Benning, GA",
+        employer: "Arrowhead Development Studios",
+        jobTitle: "FrontEnd Developer",
+        employmentStartDate: "August 2023",
+        employmentEndDate: "Current",
+        location: "Atlanta, GA",
         description:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
     });
     /**
      * Stored content (filler / saved information by user)
@@ -56,20 +56,20 @@ export default function Resume() {
     });
     const [pastEducationArr, setPastEducationArr] = useState([
         {
-            degree: "Life Sciences, B.S.",
-            school: "University of Washington",
-            schoolCity: "Seattle",
-            schoolState: "WA",
-            schoolStartDate: "Sep 2011",
-            schoolEndDate: "May 2015",
-        },
-        {
             degree: "Software Development / CyberSecurity, B.S.",
             school: "University of Portland",
             schoolCity: "Portland",
             schoolState: "OR",
-            schoolStartDate: "Sep 2015",
-            schoolEndDate: "May 2019",
+            schoolStartDate: "Sep 2019",
+            schoolEndDate: "May 2023",
+        },
+        {
+            degree: "Life Sciences, B.S.",
+            school: "University of Washington",
+            schoolCity: "Seattle",
+            schoolState: "WA",
+            schoolStartDate: "Sep 2010",
+            schoolEndDate: "May 2014",
         },
     ]);
     const [pastProfessional, setPastProfessional] = useState([
@@ -77,19 +77,19 @@ export default function Resume() {
             employer: "U.S. Army",
             jobTitle: "Soldier",
             employmentStartDate: "January 2014",
-            employmentEndDate: "January 2020",
+            employmentEndDate: "June 2020",
             location: "Ft. Benning, GA",
             description:
                 "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
         },
         {
-            employer: "U.S. Army",
-            jobTitle: "Soldier",
-            employmentStartDate: "January 2014",
-            employmentEndDate: "January 2020",
-            location: "Ft. Benning, GA",
+            employer: "Publix",
+            jobTitle: "Grocery Stocker",
+            employmentStartDate: "January 2009",
+            employmentEndDate: "July 2014",
+            location: "Atlanta, GA",
             description:
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+                "Lorem veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim. Veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
         },
     ]);
     /**
