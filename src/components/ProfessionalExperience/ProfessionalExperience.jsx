@@ -98,7 +98,7 @@ export default function ProfessionalExpierence({
                     value={professional.description}
                     onChangeHandler={onProfessionalUpdate}
                 />
-                <ComponentButtons clearComponent={clearProfessional} />
+                <ComponentButtons clearComponent={clearProfessional} onClickSave={addProfessionalExperience}/>
             </div>
         </div>
     );
