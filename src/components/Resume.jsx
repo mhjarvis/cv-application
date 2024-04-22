@@ -3,7 +3,7 @@ import "./Resume.css";
 import ButtonPanel from "./ButtonPanel/ButtonPanel";
 import Output from "./Output/Output";
 import { useState } from "react";
-import PersonalInformationInput from "./PersonalInformationInput/PersonalInformation";
+import PersonalInformation from "./PersonalInformationInput/PersonalInformation";
 import Education from "./Education/Education";
 import ProfessionalExpierence from "./ProfessionalExperience/ProfessionalExperience";
 
@@ -204,7 +204,7 @@ export default function Resume() {
             <div className="input">
                 <ButtonPanel tab={tabSelected} onTabUpdate={tabSelectHandler} />
                 <section className="input-section">
-                    <PersonalInformationInput
+                    <PersonalInformation
                         formClasses="personal-information-form"
                         onPersonalUpdate={personalHandler}
                         personal={personal}
