@@ -160,7 +160,9 @@ export default function Resume() {
         console.log("Editing professional experience");
     }
     function deleteProfessionalExperience(index) {
-        console.log("Deleting professional experience");
+        const arr = [...pastProfessional];
+        arr.splice(index, 1);
+        setPastProfessional(arr);
     }
     /*
      * Functions to clear input fields / reset fields

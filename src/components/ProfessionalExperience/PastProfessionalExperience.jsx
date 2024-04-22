@@ -32,7 +32,7 @@ export default function PastProfessionalExperience({
                                     </button>
                                     <button
                                         className="ppc-delete-button"
-                                        onClick={deleteProfessionalExperience}
+                                        onClick={() => deleteProfessionalExperience(index)}
                                     >
                                         x
                                     </button>
