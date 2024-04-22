@@ -26,7 +26,7 @@ export default function PastProfessionalExperience({
                                 <div className="personal-buttons-container">
                                     <button
                                         className="ppc-edit-button"
-                                        onClick={editProfessionalExperience}
+                                        onClick={() => editProfessionalExperience(index)}
                                     >
                                         <img src={icon_edit} alt="edit icon" />
                                     </button>

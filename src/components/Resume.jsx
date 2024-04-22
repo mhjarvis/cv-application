@@ -157,7 +157,8 @@ export default function Resume() {
         clearProfessional();
     }
     function editProfessionalExperience(index) {
-        console.log("Editing professional experience");
+        setProfessional({ ...pastProfessional[index] });
+        deleteProfessionalExperience(index);
     }
     function deleteProfessionalExperience(index) {
         const arr = [...pastProfessional];
