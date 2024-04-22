@@ -19,7 +19,7 @@ export default function ProfessionalExpierence({
     editProfessionalExperience,
     deleteProfessionalExperience,
 }) {
-    const [showProfessional, setShowProfessional] = useState(true);
+    const [showProfessional, setShowProfessional] = useState(false);
 
     function setShowProfessionalHandler() {
         setShowProfessional((lastVal) => !lastVal);
